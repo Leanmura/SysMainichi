@@ -1,0 +1,9 @@
+E:\MyApps\MainichiApp\Mainichi\Datos\bin\Debug\Datos.dll
+E:\MyApps\MainichiApp\Mainichi\Datos\bin\Debug\Datos.pdb
+E:\MyApps\MainichiApp\Mainichi\Datos\bin\Debug\entidades2.dll
+E:\MyApps\MainichiApp\Mainichi\Datos\bin\Debug\entidades2.pdb
+E:\MyApps\MainichiApp\Mainichi\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+E:\MyApps\MainichiApp\Mainichi\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+E:\MyApps\MainichiApp\Mainichi\Datos\obj\Debug\Datos.csproj.CopyComplete
+E:\MyApps\MainichiApp\Mainichi\Datos\obj\Debug\Datos.dll
+E:\MyApps\MainichiApp\Mainichi\Datos\obj\Debug\Datos.pdb

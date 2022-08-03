@@ -1,0 +1,12 @@
+E:\MyApps\MainichiApp\Mainichi\entidades2\bin\Debug\entidades2.dll
+E:\MyApps\MainichiApp\Mainichi\entidades2\bin\Debug\entidades2.pdb
+E:\MyApps\MainichiApp\Mainichi\entidades2\obj\Debug\Entidades.csproj.AssemblyReference.cache
+E:\MyApps\MainichiApp\Mainichi\entidades2\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+E:\MyApps\MainichiApp\Mainichi\entidades2\obj\Debug\entidades2.dll
+E:\MyApps\MainichiApp\Mainichi\entidades2\obj\Debug\entidades2.pdb
+E:\MyApps\MainichiApp\Mainichi\Entidades\bin\Debug\entidades2.dll
+E:\MyApps\MainichiApp\Mainichi\Entidades\bin\Debug\entidades2.pdb
+E:\MyApps\MainichiApp\Mainichi\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+E:\MyApps\MainichiApp\Mainichi\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+E:\MyApps\MainichiApp\Mainichi\Entidades\obj\Debug\entidades2.dll
+E:\MyApps\MainichiApp\Mainichi\Entidades\obj\Debug\entidades2.pdb

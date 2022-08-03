@@ -1,0 +1,5 @@
+E:\MyApps\MainichiApp\Mainichi\Entidades\bin\Release\entidades2.dll
+E:\MyApps\MainichiApp\Mainichi\Entidades\bin\Release\entidades2.pdb
+E:\MyApps\MainichiApp\Mainichi\Entidades\obj\Release\Entidades.csproj.CoreCompileInputs.cache
+E:\MyApps\MainichiApp\Mainichi\Entidades\obj\Release\entidades2.dll
+E:\MyApps\MainichiApp\Mainichi\Entidades\obj\Release\entidades2.pdb

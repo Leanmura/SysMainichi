@@ -1,0 +1,11 @@
+E:\MyApps\MainichiApp\Mainichi\Negocio\bin\Release\Negocio.dll
+E:\MyApps\MainichiApp\Mainichi\Negocio\bin\Release\Negocio.pdb
+E:\MyApps\MainichiApp\Mainichi\Negocio\bin\Release\Datos.dll
+E:\MyApps\MainichiApp\Mainichi\Negocio\bin\Release\entidades2.dll
+E:\MyApps\MainichiApp\Mainichi\Negocio\bin\Release\Datos.pdb
+E:\MyApps\MainichiApp\Mainichi\Negocio\bin\Release\entidades2.pdb
+E:\MyApps\MainichiApp\Mainichi\Negocio\obj\Release\CapaNegocio.csproj.AssemblyReference.cache
+E:\MyApps\MainichiApp\Mainichi\Negocio\obj\Release\CapaNegocio.csproj.CoreCompileInputs.cache
+E:\MyApps\MainichiApp\Mainichi\Negocio\obj\Release\CapaNegocio.csproj.CopyComplete
+E:\MyApps\MainichiApp\Mainichi\Negocio\obj\Release\Negocio.dll
+E:\MyApps\MainichiApp\Mainichi\Negocio\obj\Release\Negocio.pdb
