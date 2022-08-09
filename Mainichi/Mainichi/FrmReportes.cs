@@ -42,12 +42,17 @@ namespace Mainichi
                 decimal cerveza = new N_Reporte().totalPorCategoria("Cerveza", desde);
                 decimal canchas = new N_Reporte().totalPorCategoria("Cancha", desde);
                 decimal torneo = new N_Reporte().totalPorCategoria("Torneo", desde);
+                decimal kiosco = new N_Reporte().totalPorCategoria("Kiosco", desde);
+                decimal golosina = new N_Reporte().totalPorCategoria("Golosina", desde);
+                decimal galletitas = new N_Reporte().totalPorCategoria("Galletitas", desde);
+                decimal snack = new N_Reporte().totalPorCategoria("Snack", desde);
 
                 gridReporte.Rows.Add(
                     new object[]
                     {
                          desde.ToString("dd/MM/yyyy"),
                          comida,
+                         kiosco + golosina + galletitas + snack,
                          bebida,
                          cerveza,
                          canchas,
@@ -55,7 +60,7 @@ namespace Mainichi
                          oVenta.Gastos,
                          oVenta.CambioAntiguo,
                          oVenta.CambioNuevo,
-                         comida+bebida+cerveza+canchas+torneo-oVenta.Gastos+oVenta.CambioAntiguo-oVenta.CambioNuevo,
+                         comida + kiosco + golosina + galletitas + snack+ bebida+cerveza+canchas+torneo-oVenta.Gastos+oVenta.CambioAntiguo-oVenta.CambioNuevo,
                          oVenta.MontoTotal,
                          oVenta.MercadoPago,
                          oVenta.Otro,

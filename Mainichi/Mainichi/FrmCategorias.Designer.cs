@@ -241,6 +241,7 @@ namespace Mainichi
             this.txtId.Size = new System.Drawing.Size(21, 20);
             this.txtId.TabIndex = 13;
             this.txtId.Text = "0";
+            this.txtId.Visible = false;
             // 
             // label3
             // 
@@ -318,6 +319,7 @@ namespace Mainichi
             this.txtIndice.Size = new System.Drawing.Size(21, 20);
             this.txtIndice.TabIndex = 19;
             this.txtIndice.Text = "-1";
+            this.txtIndice.Visible = false;
             // 
             // FrmCategorias
             // 

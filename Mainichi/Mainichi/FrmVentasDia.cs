@@ -95,8 +95,9 @@ namespace Mainichi
                             
                             break;
                         case "KIOSCO":
-                        case "GALLETA":
+                        case "GALLETITAS":
                         case "GOLOSINA":
+                        case "SNACK":
                             if (contHG == 6)
                             {
                                 contVG++;
