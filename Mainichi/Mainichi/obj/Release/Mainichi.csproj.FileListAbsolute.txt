@@ -1,4 +1,6 @@
 E:\MyApps\MainichiApp\Mainichi\Mainichi\bin\Release\SysMainichi.exe.config
+E:\MyApps\MainichiApp\Mainichi\Mainichi\bin\Release\SysMainichi.exe.manifest
+E:\MyApps\MainichiApp\Mainichi\Mainichi\bin\Release\SysMainichi.application
 E:\MyApps\MainichiApp\Mainichi\Mainichi\bin\Release\SysMainichi.exe
 E:\MyApps\MainichiApp\Mainichi\Mainichi\bin\Release\SysMainichi.pdb
 E:\MyApps\MainichiApp\Mainichi\Mainichi\bin\Release\BouncyCastle.Crypto.dll
@@ -34,6 +36,8 @@ E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Release\Mainichi.mdNuevaCuenta.resou
 E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Release\Mainichi.Properties.Resources.resources
 E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Release\Mainichi.csproj.GenerateResource.cache
 E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Release\Mainichi.csproj.CoreCompileInputs.cache
+E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Release\SysMainichi.exe.manifest
+E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Release\SysMainichi.application
 E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Release\Mainichi.csproj.CopyComplete
 E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Release\SysMainichi.exe
 E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Release\SysMainichi.pdb

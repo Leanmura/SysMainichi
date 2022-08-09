@@ -19,6 +19,8 @@ E:\MyApps\MainichiApp\Mainichi\WindowsFormsApp1\bin\Debug\Datos.dll
 E:\MyApps\MainichiApp\Mainichi\WindowsFormsApp1\bin\Debug\Datos.pdb
 E:\MyApps\MainichiApp\Mainichi\WindowsFormsApp1\obj\Debug\Mainichi.FrmCategorias.resources
 E:\MyApps\MainichiApp\Mainichi\Mainichi\bin\Debug\SysMainichi.exe.config
+E:\MyApps\MainichiApp\Mainichi\Mainichi\bin\Debug\SysMainichi.exe.manifest
+E:\MyApps\MainichiApp\Mainichi\Mainichi\bin\Debug\SysMainichi.application
 E:\MyApps\MainichiApp\Mainichi\Mainichi\bin\Debug\SysMainichi.exe
 E:\MyApps\MainichiApp\Mainichi\Mainichi\bin\Debug\SysMainichi.pdb
 E:\MyApps\MainichiApp\Mainichi\Mainichi\bin\Debug\BouncyCastle.Crypto.dll
@@ -54,10 +56,8 @@ E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Debug\Mainichi.mdNuevaCuenta.resourc
 E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Debug\Mainichi.Properties.Resources.resources
 E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Debug\Mainichi.csproj.GenerateResource.cache
 E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Debug\Mainichi.csproj.CoreCompileInputs.cache
+E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Debug\SysMainichi.exe.manifest
+E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Debug\SysMainichi.application
 E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Debug\Mainichi.csproj.CopyComplete
 E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Debug\SysMainichi.exe
 E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Debug\SysMainichi.pdb
-E:\MyApps\MainichiApp\Mainichi\Mainichi\bin\Debug\SysMainichi.exe.manifest
-E:\MyApps\MainichiApp\Mainichi\Mainichi\bin\Debug\SysMainichi.application
-E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Debug\SysMainichi.exe.manifest
-E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Debug\SysMainichi.application

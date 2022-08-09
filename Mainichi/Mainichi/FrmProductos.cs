@@ -381,11 +381,11 @@ namespace Mainichi
                 {
                     if (Char.IsControl(e.KeyChar) || e.KeyChar.ToString() == ".")
                     {
-                        e.Handled = true;
+                        e.Handled = false;
                     }
                     else
                     {
-                        e.Handled = false;
+                        e.Handled = true;
                     }
                 }
             }

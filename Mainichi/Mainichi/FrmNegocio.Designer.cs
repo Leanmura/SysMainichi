@@ -102,7 +102,7 @@ namespace Mainichi
             this.btnGuardar.Location = new System.Drawing.Point(190, 157);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(258, 34);
-            this.btnGuardar.TabIndex = 46;
+            this.btnGuardar.TabIndex = 5;
             this.btnGuardar.Text = "Guardar Cambios";
             this.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -113,7 +113,7 @@ namespace Mainichi
             this.txtDireccion.Location = new System.Drawing.Point(190, 128);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(258, 20);
-            this.txtDireccion.TabIndex = 45;
+            this.txtDireccion.TabIndex = 4;
             // 
             // label3
             // 
@@ -142,7 +142,7 @@ namespace Mainichi
             this.txtTelefono.Location = new System.Drawing.Point(190, 83);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(258, 20);
-            this.txtTelefono.TabIndex = 41;
+            this.txtTelefono.TabIndex = 3;
             // 
             // btnSubir
             // 
@@ -160,7 +160,7 @@ namespace Mainichi
             this.btnSubir.Location = new System.Drawing.Point(10, 166);
             this.btnSubir.Name = "btnSubir";
             this.btnSubir.Size = new System.Drawing.Size(162, 25);
-            this.btnSubir.TabIndex = 42;
+            this.btnSubir.TabIndex = 1;
             this.btnSubir.Text = "Subir";
             this.btnSubir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSubir.UseVisualStyleBackColor = false;
@@ -182,7 +182,7 @@ namespace Mainichi
             this.txtNombre.Location = new System.Drawing.Point(190, 38);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(258, 20);
-            this.txtNombre.TabIndex = 39;
+            this.txtNombre.TabIndex = 2;
             // 
             // label2
             // 

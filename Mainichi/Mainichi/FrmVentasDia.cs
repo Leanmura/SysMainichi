@@ -39,18 +39,22 @@ namespace Mainichi
 
             int contH =0;
             int contV = 0;
-            int x = 5;
-            int y = 5;
+            int x = 4;
+            int y = 4;
             int contHB = 0;
             int contVB = 0;
-            int xB = 5;
-            int yB = 5;
+            int xB = 4;
+            int yB = 4;
             int contHC = 0;
             int contVC = 0;
-            int xC = 5;
-            int yC = 5;
-            int height = 130;
-            int width = 163;
+            int xC = 4;
+            int yC = 4;
+            int contHG = 0;
+            int contVG = 0;
+            int xG = 4;
+            int yG = 4;
+            int height = 103; //130;
+            int width = 158;//163;
             foreach (Producto prod in this.lista)
             {
                 if(prod.PrecioVenta !=0)
@@ -77,50 +81,65 @@ namespace Mainichi
                     switch(prod.OCategoria.Descripcion)
                     {
                         case "COMIDA":
-                        case "GOLOSINA":
-                            if (contHC == 5)
+                            if (contHC == 6)
                             {
                                 contVC++;
                                 contHC = 0;
-                                xC = 5;
-                                yC = 5 + contVC * (height + 5);
+                                xC = 4;
+                                yC = 4 + contVC * (height + 4);
                             }
                             btnPrueba.Location = new Point(xC, yC);
                             contHC++;
-                            xC = 5 + contHC * (width + 5);
+                            xC = 4 + contHC * (width + 4);
                             frm.tabComidas.Controls.Add(btnPrueba);
                             
+                            break;
+                        case "KIOSCO":
+                        case "GALLETA":
+                        case "GOLOSINA":
+                            if (contHG == 6)
+                            {
+                                contVG++;
+                                contHG = 0;
+                                xC = 4;
+                                yC = 4 + contVG * (height + 4);
+                            }
+                            btnPrueba.Location = new Point(xG, yG);
+                            contHG++;
+                            xG = 4 + contHG * (width + 4);
+                            frm.tabGolosinas.Controls.Add(btnPrueba);
+
                             break;
 
                         case "BEBIDA":
                         case "GASEOSA":
                         case "CERVEZA":
                         case "VINO":
-                            if (contHB == 5)
+                            if (contHB == 6)
                             {
                                 contVB++;
                                 contHB   = 0;
-                                xB = 5;
-                                yB = 5 + contVB * (height + 5);
+                                xB = 4;
+                                yB = 4 + contVB * (height + 4);
                             }
                         
                             btnPrueba.Location = new Point(xB, yB);
                             contHB++;
-                            xB = 5 + contHB * (width + 5);
+                            xB = 4 + contHB * (width + 4);
                             frm.tabBebidas.Controls.Add(btnPrueba);
                             break;
                         default:
-                            if (contH == 5)
+                            if (contH == 6)
                             {
                                 contV++;
                                 contH = 0;
-                                x = 5;
-                                y = 5 + contV * (height + 5);
+                                x = 4;
+                                y = 4 + contV * (height + 4);
                             }
                             btnPrueba.Location = new Point(x, y);
                             contH++;
-                            x = 5 + contH * (width + 5);
-                            frm.tabCanchas.Controls.Add(btnPrueba);
+                            x = 4 + contH * (width + 4);
+                            frm.tabCancha.Controls.Add(btnPrueba);
                             break;
 
                     }
@@ -177,7 +196,8 @@ namespace Mainichi
             Button boton = sender as Button;
             int index = this.lista.FindIndex(obj => obj.Nombre == boton.AccessibleName); // obj es x elemento de la lista\\
             // si apreta el boton qeu se llama efectivo, abre un md para ingresar monto
-            if(this.lista[index].Nombre.Split(' ')[0] == "Efectivo")
+            if(this.lista[index].Nombre.Split(' ')[0].ToLower() == "efectivo" ||
+                this.lista[index].Nombre.Split(' ')[0].ToLower() == "escuelita")
             {
                 mdIngresarDato md = new mdIngresarDato("Monto Personalizado", "Ingresar monto:");
                 if (md.ShowDialog() == DialogResult.OK)
@@ -269,8 +289,8 @@ namespace Mainichi
                 this.cboVentas.SelectedIndex = index;
                 this.gridVenta.Visible = false;
                 DataGridView nuevoGrid = new DataGridView();
-                nuevoGrid.Location = new Point(862, 29);
-                nuevoGrid.Size = new Size(285, 345); 
+                nuevoGrid.Location = new Point(993, 29);
+                nuevoGrid.Size = new Size(285, 337); 
                 nuevoGrid.Columns.Add("Id", "ID");
                 nuevoGrid.Columns[0].Visible = false;
                 nuevoGrid.Columns.Add("Producto", "Producto");
@@ -308,10 +328,11 @@ namespace Mainichi
                 panelEfectivo.Visible = false;
                 panelMercadoPago.Visible = false;
                 panelOtro.Visible = false;
+                panelCambio.Visible = false;
                 btnGuardar.Visible = false;
-                btnEliminar.Location = new Point(862, 379);
-                panelFormaDePago.Location = new Point(862, 379 + 28 + 5);
-                panelPagar.Location = new Point(862, 379+28+5 + 84+ 5);
+                btnEliminar.Location = new Point(993, 287 + 29 + 51 +5); // 372
+                panelFormaDePago.Location = new Point(993, 287 + 5+ 51 + 29 + 28 + 5); // 405
+                panelPagar.Location = new Point(993, 287 + 5 + 29 + 51 + 28+5 + 84+ 5); // 494
                 panelPagar.Visible = true;
                 txtTotalPagar.Text = "0.00";
                 txtVuelto.Text = "0.00";
@@ -334,9 +355,14 @@ namespace Mainichi
 
                         if(gridActivo.AccessibleName != "General")
                         {
+                            btnGuardar.Visible = false;
                             panelEfectivo.Visible = false;
-                            btnEliminar.Location = new Point(862, 379);
+                            panelMercadoPago.Visible = false;
+                            panelOtro.Visible = false;
+                            panelCambio.Visible = false;
+                            btnEliminar.Location = new Point(993, 372);
                             panelPagar.Visible = true;
+                            panelFormaDePago.Location = new Point(993, 405);
 
                             calcularTotal(txtTotalPagar,"");
                         }
@@ -346,9 +372,10 @@ namespace Mainichi
                             panelMercadoPago.Visible = true;
                             panelOtro.Visible = true;
                             btnGuardar.Visible = true;
-                            btnEliminar.Location = new Point(862, 690);
+                            panelCambio.Visible = true;
+                            btnEliminar.Location = new Point(993, 544);
                             panelPagar.Visible = false;
-                            panelFormaDePago.Location = new Point(862, 600);
+                            panelFormaDePago.Location = new Point(993, 454);
                         }
                     }
                     else
@@ -522,7 +549,11 @@ namespace Mainichi
             this.cboVentas.SelectedIndex = 0; // seteo la ceunta de ventas general en el combobox
             gridActivo.Visible = true;
             panelEfectivo.Visible = true;
-            btnEliminar.Location = new Point(863, 690);
+            panelCambio.Visible = true;
+            panelMercadoPago.Visible = true;
+            panelOtro.Visible = true;
+
+            btnEliminar.Location = new Point(993, 544);
             panelPagar.Visible = false;
             txtVuelto.Text = "0.00";
             txtPagaCon.Text = "0.00";

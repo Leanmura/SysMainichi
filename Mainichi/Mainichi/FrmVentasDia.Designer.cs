@@ -32,7 +32,7 @@ namespace Mainichi
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.tabCanchas = new System.Windows.Forms.TabPage();
+            this.tabGolosinas = new System.Windows.Forms.TabPage();
             this.tabComidas = new System.Windows.Forms.TabPage();
             this.tabBebidas = new System.Windows.Forms.TabPage();
             this.panelPagar = new System.Windows.Forms.Panel();
@@ -68,11 +68,12 @@ namespace Mainichi
             this.txtMercadoPago = new System.Windows.Forms.TextBox();
             this.lblMercadoPago = new System.Windows.Forms.Label();
             this.panelMercadoPago = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelCambio = new System.Windows.Forms.Panel();
             this.txtCambioFinal = new System.Windows.Forms.TextBox();
             this.lblCambioAntiguo = new System.Windows.Forms.Label();
             this.txtCambioAntiguo = new System.Windows.Forms.TextBox();
             this.lblCambioFinal = new System.Windows.Forms.Label();
+            this.tabCancha = new System.Windows.Forms.TabPage();
             this.panelPagar.SuspendLayout();
             this.tabControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridVenta)).BeginInit();
@@ -80,25 +81,25 @@ namespace Mainichi
             this.panelFormaDePago.SuspendLayout();
             this.panelOtro.SuspendLayout();
             this.panelMercadoPago.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panelCambio.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabCanchas
+            // tabGolosinas
             // 
-            this.tabCanchas.Location = new System.Drawing.Point(4, 29);
-            this.tabCanchas.Name = "tabCanchas";
-            this.tabCanchas.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCanchas.Size = new System.Drawing.Size(846, 685);
-            this.tabCanchas.TabIndex = 2;
-            this.tabCanchas.Text = "Canchas";
-            this.tabCanchas.UseVisualStyleBackColor = true;
+            this.tabGolosinas.Location = new System.Drawing.Point(4, 29);
+            this.tabGolosinas.Name = "tabGolosinas";
+            this.tabGolosinas.Padding = new System.Windows.Forms.Padding(3);
+            this.tabGolosinas.Size = new System.Drawing.Size(977, 543);
+            this.tabGolosinas.TabIndex = 2;
+            this.tabGolosinas.Text = "Golosinas";
+            this.tabGolosinas.UseVisualStyleBackColor = true;
             // 
             // tabComidas
             // 
             this.tabComidas.Location = new System.Drawing.Point(4, 29);
             this.tabComidas.Name = "tabComidas";
             this.tabComidas.Padding = new System.Windows.Forms.Padding(3);
-            this.tabComidas.Size = new System.Drawing.Size(846, 685);
+            this.tabComidas.Size = new System.Drawing.Size(977, 543);
             this.tabComidas.TabIndex = 1;
             this.tabComidas.Text = "Comidas";
             this.tabComidas.UseVisualStyleBackColor = true;
@@ -111,7 +112,7 @@ namespace Mainichi
             this.tabBebidas.Margin = new System.Windows.Forms.Padding(5);
             this.tabBebidas.Name = "tabBebidas";
             this.tabBebidas.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBebidas.Size = new System.Drawing.Size(846, 685);
+            this.tabBebidas.Size = new System.Drawing.Size(977, 543);
             this.tabBebidas.TabIndex = 0;
             this.tabBebidas.Text = "Bebidas";
             this.tabBebidas.UseVisualStyleBackColor = true;
@@ -127,7 +128,7 @@ namespace Mainichi
             this.panelPagar.Controls.Add(this.txtPagaCon);
             this.panelPagar.Controls.Add(this.lblVuelto);
             this.panelPagar.Controls.Add(this.txtVuelto);
-            this.panelPagar.Location = new System.Drawing.Point(862, 430);
+            this.panelPagar.Location = new System.Drawing.Point(993, 290);
             this.panelPagar.Name = "panelPagar";
             this.panelPagar.Size = new System.Drawing.Size(285, 137);
             this.panelPagar.TabIndex = 33;
@@ -217,14 +218,15 @@ namespace Mainichi
             // 
             this.tabControl.Controls.Add(this.tabBebidas);
             this.tabControl.Controls.Add(this.tabComidas);
-            this.tabControl.Controls.Add(this.tabCanchas);
+            this.tabControl.Controls.Add(this.tabGolosinas);
+            this.tabControl.Controls.Add(this.tabCancha);
             this.tabControl.ItemSize = new System.Drawing.Size(70, 25);
             this.tabControl.Location = new System.Drawing.Point(4, 0);
             this.tabControl.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl.Name = "tabControl";
             this.tabControl.Padding = new System.Drawing.Point(0, 0);
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(854, 718);
+            this.tabControl.Size = new System.Drawing.Size(985, 576);
             this.tabControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl.TabIndex = 0;
             // 
@@ -262,7 +264,7 @@ namespace Mainichi
             this.Cantidad,
             this.Total,
             this.FormaDePago});
-            this.gridVenta.Location = new System.Drawing.Point(862, 29);
+            this.gridVenta.Location = new System.Drawing.Point(993, 29);
             this.gridVenta.MultiSelect = false;
             this.gridVenta.Name = "gridVenta";
             this.gridVenta.ReadOnly = true;
@@ -282,7 +284,7 @@ namespace Mainichi
             this.gridVenta.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.SystemColors.MenuText;
             this.gridVenta.RowTemplate.Height = 29;
             this.gridVenta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridVenta.Size = new System.Drawing.Size(285, 565);
+            this.gridVenta.Size = new System.Drawing.Size(285, 419);
             this.gridVenta.TabIndex = 28;
             // 
             // IdProducto
@@ -337,7 +339,7 @@ namespace Mainichi
             this.cboVentas.FormattingEnabled = true;
             this.cboVentas.Items.AddRange(new object[] {
             "General"});
-            this.cboVentas.Location = new System.Drawing.Point(862, 4);
+            this.cboVentas.Location = new System.Drawing.Point(992, 4);
             this.cboVentas.Name = "cboVentas";
             this.cboVentas.Size = new System.Drawing.Size(154, 21);
             this.cboVentas.TabIndex = 29;
@@ -351,7 +353,7 @@ namespace Mainichi
             this.btnNuevaCuenta.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnNuevaCuenta.IconSize = 20;
             this.btnNuevaCuenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevaCuenta.Location = new System.Drawing.Point(1027, 4);
+            this.btnNuevaCuenta.Location = new System.Drawing.Point(1157, 4);
             this.btnNuevaCuenta.Name = "btnNuevaCuenta";
             this.btnNuevaCuenta.Size = new System.Drawing.Size(120, 23);
             this.btnNuevaCuenta.TabIndex = 30;
@@ -372,7 +374,7 @@ namespace Mainichi
             this.btnEliminar.IconColor = System.Drawing.Color.White;
             this.btnEliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEliminar.IconSize = 16;
-            this.btnEliminar.Location = new System.Drawing.Point(862, 690);
+            this.btnEliminar.Location = new System.Drawing.Point(993, 545);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(285, 28);
             this.btnEliminar.TabIndex = 31;
@@ -398,7 +400,7 @@ namespace Mainichi
             this.panelEfectivo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelEfectivo.Controls.Add(this.lblEfectivo);
             this.panelEfectivo.Controls.Add(this.txtEfectivo);
-            this.panelEfectivo.Location = new System.Drawing.Point(8, 721);
+            this.panelEfectivo.Location = new System.Drawing.Point(5, 581);
             this.panelEfectivo.Name = "panelEfectivo";
             this.panelEfectivo.Size = new System.Drawing.Size(208, 51);
             this.panelEfectivo.TabIndex = 0;
@@ -423,7 +425,7 @@ namespace Mainichi
             this.panelFormaDePago.Controls.Add(this.rBtnOtro);
             this.panelFormaDePago.Controls.Add(this.rBtnEfectivo);
             this.panelFormaDePago.Controls.Add(this.rBtnMP);
-            this.panelFormaDePago.Location = new System.Drawing.Point(862, 600);
+            this.panelFormaDePago.Location = new System.Drawing.Point(993, 454);
             this.panelFormaDePago.Name = "panelFormaDePago";
             this.panelFormaDePago.Size = new System.Drawing.Size(285, 84);
             this.panelFormaDePago.TabIndex = 1;
@@ -466,7 +468,7 @@ namespace Mainichi
             this.btnGuardar.IconColor = System.Drawing.Color.White;
             this.btnGuardar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnGuardar.IconSize = 20;
-            this.btnGuardar.Location = new System.Drawing.Point(862, 721);
+            this.btnGuardar.Location = new System.Drawing.Point(993, 579);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(285, 51);
             this.btnGuardar.TabIndex = 39;
@@ -482,7 +484,7 @@ namespace Mainichi
             this.panelOtro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelOtro.Controls.Add(this.lblOtro);
             this.panelOtro.Controls.Add(this.txtOtro);
-            this.panelOtro.Location = new System.Drawing.Point(422, 721);
+            this.panelOtro.Location = new System.Drawing.Point(419, 581);
             this.panelOtro.Name = "panelOtro";
             this.panelOtro.Size = new System.Drawing.Size(181, 51);
             this.panelOtro.TabIndex = 34;
@@ -536,23 +538,23 @@ namespace Mainichi
             this.panelMercadoPago.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelMercadoPago.Controls.Add(this.lblMercadoPago);
             this.panelMercadoPago.Controls.Add(this.txtMercadoPago);
-            this.panelMercadoPago.Location = new System.Drawing.Point(231, 722);
+            this.panelMercadoPago.Location = new System.Drawing.Point(228, 582);
             this.panelMercadoPago.Name = "panelMercadoPago";
             this.panelMercadoPago.Size = new System.Drawing.Size(173, 51);
             this.panelMercadoPago.TabIndex = 33;
             // 
-            // panel1
+            // panelCambio
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Window;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.txtCambioFinal);
-            this.panel1.Controls.Add(this.lblCambioAntiguo);
-            this.panel1.Controls.Add(this.txtCambioAntiguo);
-            this.panel1.Controls.Add(this.lblCambioFinal);
-            this.panel1.Location = new System.Drawing.Point(620, 721);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(234, 51);
-            this.panel1.TabIndex = 35;
+            this.panelCambio.BackColor = System.Drawing.SystemColors.Window;
+            this.panelCambio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelCambio.Controls.Add(this.txtCambioFinal);
+            this.panelCambio.Controls.Add(this.lblCambioAntiguo);
+            this.panelCambio.Controls.Add(this.txtCambioAntiguo);
+            this.panelCambio.Controls.Add(this.lblCambioFinal);
+            this.panelCambio.Location = new System.Drawing.Point(751, 579);
+            this.panelCambio.Name = "panelCambio";
+            this.panelCambio.Size = new System.Drawing.Size(234, 51);
+            this.panelCambio.TabIndex = 35;
             // 
             // txtCambioFinal
             // 
@@ -595,23 +597,33 @@ namespace Mainichi
             this.lblCambioFinal.TabIndex = 46;
             this.lblCambioFinal.Text = "Cambio Final:";
             // 
+            // tabCancha
+            // 
+            this.tabCancha.Location = new System.Drawing.Point(4, 29);
+            this.tabCancha.Name = "tabCancha";
+            this.tabCancha.Padding = new System.Windows.Forms.Padding(3);
+            this.tabCancha.Size = new System.Drawing.Size(977, 543);
+            this.tabCancha.TabIndex = 3;
+            this.tabCancha.Text = "Canchas";
+            this.tabCancha.UseVisualStyleBackColor = true;
+            // 
             // FrmVentasDia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1154, 780);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(1284, 640);
+            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.panelCambio);
             this.Controls.Add(this.panelOtro);
             this.Controls.Add(this.panelMercadoPago);
-            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.panelFormaDePago);
-            this.Controls.Add(this.panelPagar);
             this.Controls.Add(this.panelEfectivo);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnNuevaCuenta);
             this.Controls.Add(this.cboVentas);
-            this.Controls.Add(this.gridVenta);
             this.Controls.Add(this.tabControl);
+            this.Controls.Add(this.panelPagar);
+            this.Controls.Add(this.gridVenta);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmVentasDia";
             this.Padding = new System.Windows.Forms.Padding(4, 0, 4, 4);
@@ -629,14 +641,14 @@ namespace Mainichi
             this.panelOtro.PerformLayout();
             this.panelMercadoPago.ResumeLayout(false);
             this.panelMercadoPago.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelCambio.ResumeLayout(false);
+            this.panelCambio.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.TabPage tabCanchas;
+        private System.Windows.Forms.TabPage tabGolosinas;
         private System.Windows.Forms.TabPage tabComidas;
         private System.Windows.Forms.TabPage tabBebidas;
         private System.Windows.Forms.TabControl tabControl;
@@ -672,10 +684,11 @@ namespace Mainichi
         private System.Windows.Forms.TextBox txtMercadoPago;
         private System.Windows.Forms.Label lblMercadoPago;
         private System.Windows.Forms.Panel panelMercadoPago;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelCambio;
         private System.Windows.Forms.TextBox txtCambioFinal;
         private System.Windows.Forms.Label lblCambioAntiguo;
         private System.Windows.Forms.TextBox txtCambioAntiguo;
         private System.Windows.Forms.Label lblCambioFinal;
+        private System.Windows.Forms.TabPage tabCancha;
     }
 }

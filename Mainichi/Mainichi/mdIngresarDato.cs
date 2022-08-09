@@ -45,11 +45,11 @@ namespace Mainichi
                 {
                     if (Char.IsControl(e.KeyChar) || e.KeyChar.ToString() == ".")
                     {
-                        e.Handled = false;
+                        e.Handled = true;
                     }
                     else
                     {
-                        e.Handled = true;
+                        e.Handled = false;
 
                     }
                 }

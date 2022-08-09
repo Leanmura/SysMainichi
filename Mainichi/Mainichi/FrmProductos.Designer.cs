@@ -29,9 +29,9 @@ namespace Mainichi
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtIndice = new System.Windows.Forms.TextBox();
             this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.cboBusqueda = new System.Windows.Forms.ComboBox();
@@ -77,8 +77,9 @@ namespace Mainichi
             this.txtIndice.Location = new System.Drawing.Point(159, 41);
             this.txtIndice.Name = "txtIndice";
             this.txtIndice.Size = new System.Drawing.Size(21, 20);
-            this.txtIndice.TabIndex = 35;
+            this.txtIndice.TabIndex = 0;
             this.txtIndice.Text = "-1";
+            this.txtIndice.Visible = false;
             // 
             // txtBusqueda
             // 
@@ -87,7 +88,7 @@ namespace Mainichi
             this.txtBusqueda.Name = "txtBusqueda";
             this.txtBusqueda.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtBusqueda.Size = new System.Drawing.Size(124, 20);
-            this.txtBusqueda.TabIndex = 32;
+            this.txtBusqueda.TabIndex = 10;
             // 
             // cboBusqueda
             // 
@@ -100,7 +101,7 @@ namespace Mainichi
             this.cboBusqueda.Name = "cboBusqueda";
             this.cboBusqueda.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.cboBusqueda.Size = new System.Drawing.Size(121, 21);
-            this.cboBusqueda.TabIndex = 31;
+            this.cboBusqueda.TabIndex = 9;
             // 
             // label3
             // 
@@ -120,8 +121,9 @@ namespace Mainichi
             this.txtId.Location = new System.Drawing.Point(186, 41);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(21, 20);
-            this.txtId.TabIndex = 29;
+            this.txtId.TabIndex = 0;
             this.txtId.Text = "0";
+            this.txtId.Visible = false;
             // 
             // lblBuscar
             // 
@@ -143,15 +145,15 @@ namespace Mainichi
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridProductos.BackgroundColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnSeleccionar,
@@ -167,20 +169,21 @@ namespace Mainichi
             this.gridProductos.MultiSelect = false;
             this.gridProductos.Name = "gridProductos";
             this.gridProductos.ReadOnly = true;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridProductos.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            this.gridProductos.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridProductos.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.gridProductos.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.gridProductos.RowTemplate.Height = 80;
             this.gridProductos.Size = new System.Drawing.Size(814, 457);
             this.gridProductos.TabIndex = 27;
+            this.gridProductos.TabStop = false;
             this.gridProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridProductos_CellContentClick);
             this.gridProductos.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.gridProductos_CellPainting);
             // 
@@ -259,7 +262,7 @@ namespace Mainichi
             this.txtNombre.Location = new System.Drawing.Point(21, 74);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(186, 20);
-            this.txtNombre.TabIndex = 23;
+            this.txtNombre.TabIndex = 1;
             // 
             // lblDetalleProducto
             // 
@@ -269,7 +272,7 @@ namespace Mainichi
             this.lblDetalleProducto.Location = new System.Drawing.Point(16, 13);
             this.lblDetalleProducto.Name = "lblDetalleProducto";
             this.lblDetalleProducto.Size = new System.Drawing.Size(180, 25);
-            this.lblDetalleProducto.TabIndex = 22;
+            this.lblDetalleProducto.TabIndex = 0;
             this.lblDetalleProducto.Text = "Detalle Producto";
             // 
             // label2
@@ -301,7 +304,7 @@ namespace Mainichi
             this.lblNombre.Location = new System.Drawing.Point(18, 54);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(65, 17);
-            this.lblNombre.TabIndex = 36;
+            this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "Nombre:";
             // 
             // txtDescripcion
@@ -309,7 +312,7 @@ namespace Mainichi
             this.txtDescripcion.Location = new System.Drawing.Point(21, 114);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(186, 20);
-            this.txtDescripcion.TabIndex = 37;
+            this.txtDescripcion.TabIndex = 2;
             // 
             // cboCategoria
             // 
@@ -320,7 +323,7 @@ namespace Mainichi
             this.cboCategoria.Location = new System.Drawing.Point(21, 201);
             this.cboCategoria.Name = "cboCategoria";
             this.cboCategoria.Size = new System.Drawing.Size(186, 21);
-            this.cboCategoria.TabIndex = 38;
+            this.cboCategoria.TabIndex = 4;
             // 
             // lblCategoria
             // 
@@ -338,7 +341,7 @@ namespace Mainichi
             this.txtVenta.Location = new System.Drawing.Point(21, 158);
             this.txtVenta.Name = "txtVenta";
             this.txtVenta.Size = new System.Drawing.Size(186, 20);
-            this.txtVenta.TabIndex = 43;
+            this.txtVenta.TabIndex = 3;
             this.txtVenta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtVenta_KeyPress);
             // 
             // lblVenta
@@ -379,7 +382,7 @@ namespace Mainichi
             this.btnSubir.Location = new System.Drawing.Point(21, 373);
             this.btnSubir.Name = "btnSubir";
             this.btnSubir.Size = new System.Drawing.Size(186, 25);
-            this.btnSubir.TabIndex = 45;
+            this.btnSubir.TabIndex = 5;
             this.btnSubir.Text = "Subir";
             this.btnSubir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSubir.UseVisualStyleBackColor = false;
@@ -414,7 +417,7 @@ namespace Mainichi
             this.btnDescargar.Name = "btnDescargar";
             this.btnDescargar.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnDescargar.Size = new System.Drawing.Size(105, 28);
-            this.btnDescargar.TabIndex = 41;
+            this.btnDescargar.TabIndex = 13;
             this.btnDescargar.Text = "Descargar ";
             this.btnDescargar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDescargar.UseVisualStyleBackColor = false;
@@ -437,7 +440,7 @@ namespace Mainichi
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnBuscar.Size = new System.Drawing.Size(45, 20);
-            this.btnBuscar.TabIndex = 40;
+            this.btnBuscar.TabIndex = 11;
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
@@ -459,7 +462,7 @@ namespace Mainichi
             this.btnLimpiarBusqueda.Name = "btnLimpiarBusqueda";
             this.btnLimpiarBusqueda.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnLimpiarBusqueda.Size = new System.Drawing.Size(45, 21);
-            this.btnLimpiarBusqueda.TabIndex = 34;
+            this.btnLimpiarBusqueda.TabIndex = 12;
             this.btnLimpiarBusqueda.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLimpiarBusqueda.UseVisualStyleBackColor = false;
             this.btnLimpiarBusqueda.Click += new System.EventHandler(this.btnLimpiarBusqueda_Click);
@@ -479,7 +482,7 @@ namespace Mainichi
             this.btnEliminar.Location = new System.Drawing.Point(21, 504);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(186, 28);
-            this.btnEliminar.TabIndex = 26;
+            this.btnEliminar.TabIndex = 8;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -501,7 +504,7 @@ namespace Mainichi
             this.btnLimpiar.Location = new System.Drawing.Point(21, 470);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(186, 28);
-            this.btnLimpiar.TabIndex = 25;
+            this.btnLimpiar.TabIndex = 7;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLimpiar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -523,7 +526,7 @@ namespace Mainichi
             this.btnGuardar.Location = new System.Drawing.Point(21, 436);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(186, 28);
-            this.btnGuardar.TabIndex = 24;
+            this.btnGuardar.TabIndex = 6;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;

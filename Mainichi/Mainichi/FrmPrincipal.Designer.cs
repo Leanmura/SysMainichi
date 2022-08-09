@@ -52,7 +52,7 @@ namespace Mainichi
             this.panel.Location = new System.Drawing.Point(0, 72);
             this.panel.Margin = new System.Windows.Forms.Padding(9);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(1157, 805);
+            this.panel.Size = new System.Drawing.Size(1284, 640);
             this.panel.TabIndex = 1;
             // 
             // menuStrip1
@@ -68,7 +68,7 @@ namespace Mainichi
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1157, 73);
+            this.menuStrip1.Size = new System.Drawing.Size(1284, 73);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -186,7 +186,7 @@ namespace Mainichi
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.Controls.Add(this.dateTimePicker);
-            this.panel1.Location = new System.Drawing.Point(527, 0);
+            this.panel1.Location = new System.Drawing.Point(654, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(630, 38);
             this.panel1.TabIndex = 35;
@@ -196,7 +196,7 @@ namespace Mainichi
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1157, 878);
+            this.ClientSize = new System.Drawing.Size(1284, 711);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel);
             this.Controls.Add(this.menuStrip1);
