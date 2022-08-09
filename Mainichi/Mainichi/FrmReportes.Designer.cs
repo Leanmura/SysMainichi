@@ -47,7 +47,7 @@ namespace Mainichi
             this.Bebida = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cerveza = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Canchas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Torneo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Juegos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Gastos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CambioAntiguo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CambioNuevo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -108,7 +108,7 @@ namespace Mainichi
             this.Bebida,
             this.Cerveza,
             this.Canchas,
-            this.Torneo,
+            this.Juegos,
             this.Gastos,
             this.CambioAntiguo,
             this.CambioNuevo,
@@ -269,12 +269,12 @@ namespace Mainichi
             this.Canchas.ReadOnly = true;
             this.Canchas.Width = 75;
             // 
-            // Torneo
+            // Juegos
             // 
-            this.Torneo.HeaderText = "Torneo";
-            this.Torneo.Name = "Torneo";
-            this.Torneo.ReadOnly = true;
-            this.Torneo.Width = 75;
+            this.Juegos.HeaderText = "Juegos";
+            this.Juegos.Name = "Juegos";
+            this.Juegos.ReadOnly = true;
+            this.Juegos.Width = 75;
             // 
             // Gastos
             // 
@@ -367,7 +367,7 @@ namespace Mainichi
         private System.Windows.Forms.DataGridViewTextBoxColumn Bebida;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cerveza;
         private System.Windows.Forms.DataGridViewTextBoxColumn Canchas;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Torneo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Juegos;
         private System.Windows.Forms.DataGridViewTextBoxColumn Gastos;
         private System.Windows.Forms.DataGridViewTextBoxColumn CambioAntiguo;
         private System.Windows.Forms.DataGridViewTextBoxColumn CambioNuevo;

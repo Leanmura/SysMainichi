@@ -29,10 +29,10 @@ namespace Mainichi
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.tabGolosinas = new System.Windows.Forms.TabPage();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.tabKiosco = new System.Windows.Forms.TabPage();
             this.tabComidas = new System.Windows.Forms.TabPage();
             this.tabBebidas = new System.Windows.Forms.TabPage();
             this.panelPagar = new System.Windows.Forms.Panel();
@@ -84,15 +84,15 @@ namespace Mainichi
             this.panelCambio.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabGolosinas
+            // tabKiosco
             // 
-            this.tabGolosinas.Location = new System.Drawing.Point(4, 29);
-            this.tabGolosinas.Name = "tabGolosinas";
-            this.tabGolosinas.Padding = new System.Windows.Forms.Padding(3);
-            this.tabGolosinas.Size = new System.Drawing.Size(977, 543);
-            this.tabGolosinas.TabIndex = 2;
-            this.tabGolosinas.Text = "Kiosco";
-            this.tabGolosinas.UseVisualStyleBackColor = true;
+            this.tabKiosco.Location = new System.Drawing.Point(4, 29);
+            this.tabKiosco.Name = "tabKiosco";
+            this.tabKiosco.Padding = new System.Windows.Forms.Padding(3);
+            this.tabKiosco.Size = new System.Drawing.Size(977, 543);
+            this.tabKiosco.TabIndex = 2;
+            this.tabKiosco.Text = "Kiosco";
+            this.tabKiosco.UseVisualStyleBackColor = true;
             // 
             // tabComidas
             // 
@@ -218,7 +218,7 @@ namespace Mainichi
             // 
             this.tabControl.Controls.Add(this.tabBebidas);
             this.tabControl.Controls.Add(this.tabComidas);
-            this.tabControl.Controls.Add(this.tabGolosinas);
+            this.tabControl.Controls.Add(this.tabKiosco);
             this.tabControl.Controls.Add(this.tabCancha);
             this.tabControl.ItemSize = new System.Drawing.Size(70, 25);
             this.tabControl.Location = new System.Drawing.Point(4, 0);
@@ -246,15 +246,15 @@ namespace Mainichi
             this.gridVenta.AccessibleName = "General";
             this.gridVenta.AllowUserToAddRows = false;
             this.gridVenta.BackgroundColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridVenta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridVenta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridVenta.ColumnHeadersHeight = 30;
             this.gridVenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.gridVenta.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -268,18 +268,18 @@ namespace Mainichi
             this.gridVenta.MultiSelect = false;
             this.gridVenta.Name = "gridVenta";
             this.gridVenta.ReadOnly = true;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridVenta.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridVenta.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridVenta.RowHeadersVisible = false;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            this.gridVenta.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.gridVenta.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.gridVenta.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.gridVenta.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.SystemColors.MenuText;
             this.gridVenta.RowTemplate.Height = 29;
@@ -648,7 +648,7 @@ namespace Mainichi
         }
 
         #endregion
-        private System.Windows.Forms.TabPage tabGolosinas;
+        private System.Windows.Forms.TabPage tabKiosco;
         private System.Windows.Forms.TabPage tabComidas;
         private System.Windows.Forms.TabPage tabBebidas;
         private System.Windows.Forms.TabControl tabControl;

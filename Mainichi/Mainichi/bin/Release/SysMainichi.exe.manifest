@@ -163,14 +163,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SysMainichi.exe" size="357872">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SysMainichi.exe" size="358384">
       <assemblyIdentity name="SysMainichi" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>TWkRXPEPCOwjBK6k9BJAuSY5f17xNNtL8/8exI+OKPg=</dsig:DigestValue>
+        <dsig:DigestValue>94/76tDzlP2BRJ/imHEOz3M7czDfTvCaLxVb4B3sOoc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

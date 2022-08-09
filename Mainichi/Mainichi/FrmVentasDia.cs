@@ -108,7 +108,7 @@ namespace Mainichi
                             btnPrueba.Location = new Point(xG, yG);
                             contHG++;
                             xG = 4 + contHG * (width + 4);
-                            frm.tabGolosinas.Controls.Add(btnPrueba);
+                            frm.tabKiosco.Controls.Add(btnPrueba);
 
                             break;
 

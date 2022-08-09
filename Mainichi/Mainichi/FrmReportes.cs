@@ -46,6 +46,7 @@ namespace Mainichi
                 decimal golosina = new N_Reporte().totalPorCategoria("Golosina", desde);
                 decimal galletitas = new N_Reporte().totalPorCategoria("Galletitas", desde);
                 decimal snack = new N_Reporte().totalPorCategoria("Snack", desde);
+                decimal juegos = new N_Reporte().totalPorCategoria("Juegos", desde);
 
                 gridReporte.Rows.Add(
                     new object[]
@@ -55,8 +56,8 @@ namespace Mainichi
                          kiosco + golosina + galletitas + snack,
                          bebida,
                          cerveza,
-                         canchas,
-                         torneo,
+                         canchas + torneo,
+                         juegos,
                          oVenta.Gastos,
                          oVenta.CambioAntiguo,
                          oVenta.CambioNuevo,
