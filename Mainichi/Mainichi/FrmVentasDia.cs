@@ -102,8 +102,8 @@ namespace Mainichi
                             {
                                 contVG++;
                                 contHG = 0;
-                                xC = 4;
-                                yC = 4 + contVG * (height + 4);
+                                xG = 4;
+                                yG = 4 + contVG * (height + 4);
                             }
                             btnPrueba.Location = new Point(xG, yG);
                             contHG++;
