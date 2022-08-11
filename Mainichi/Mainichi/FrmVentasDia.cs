@@ -160,7 +160,7 @@ namespace Mainichi
                 this.txtCambioAntiguo.Text = oVenta.CambioAntiguo.ToString();
             this.txtCambioFinal.Text = oVenta.CambioNuevo.ToString();
             
-            if (listaDetalleVenta != null &&listaDetalleVenta.Count > 0)
+            if (listaDetalleVenta != null) 
             {             
                 foreach (DetalleVenta item in listaDetalleVenta)
                 {
