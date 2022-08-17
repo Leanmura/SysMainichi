@@ -20,6 +20,7 @@ namespace Mainichi
         private DateTime fecha;
         private FrmCompras frmCompras;
         private bool isNew = true;
+        public bool hasChange = false;
 
         public FrmVentasDia(DateTime fecha, FrmCompras frmCompras)
         {
@@ -256,8 +257,7 @@ namespace Mainichi
                 }
 
             }
-
-
+            hasChange = true;
         }
 
         //funciones 
@@ -581,7 +581,7 @@ namespace Mainichi
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-
+                
                 DataTable detalleVenta = new DataTable();
                 detalleVenta.Columns.Add("IdProducto", typeof(int));
                 detalleVenta.Columns.Add("PrecioVenta", typeof(decimal));
@@ -596,7 +596,7 @@ namespace Mainichi
                     {
                         if (item.Cells["IdProducto"].Value.ToString() == gridActivo.Rows[x].Cells["IdProducto"].Value.ToString() && // si el id es el mismo
                             item.Cells["FormaDePago"].Value.ToString() == gridActivo.Rows[x].Cells["FormaDePago"].Value.ToString() && // y la forma de pago tamb
-                            item.Cells["Producto"].Value.ToString().Split(' ')[0] != "Efectivo") // y el nombre es diferente de Efectivo
+                            item.Cells["Producto"].Value.ToString().Split(' ')[0].ToLower() != "efectivo") // y el nombre es diferente de Efectivo
                         {
                             cantidad += (int)gridActivo.Rows[x].Cells["Cantidad"].Value; // sumo la cantidad
                             gridActivo.Rows.RemoveAt(x); // saco el producto que sume en la cantidad
@@ -653,6 +653,8 @@ namespace Mainichi
                     MessageBox.Show(mensaje, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             }
+            frmCompras.hasChange = false;
+            hasChange = false;
         }
 
     }

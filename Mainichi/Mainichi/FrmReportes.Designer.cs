@@ -327,7 +327,7 @@ namespace Mainichi
             // 
             // TotalReal
             // 
-            this.TotalReal.HeaderText = "Total Real";
+            this.TotalReal.HeaderText = "Efectivo Real";
             this.TotalReal.Name = "TotalReal";
             this.TotalReal.ReadOnly = true;
             this.TotalReal.Width = 75;

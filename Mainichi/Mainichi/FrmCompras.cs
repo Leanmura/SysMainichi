@@ -19,6 +19,7 @@ namespace Mainichi
         public decimal otro;
         public decimal mercadoPago;
         public DataTable detalleCompra;
+        public bool hasChange = false;
 
         public FrmCompras( )
         {
@@ -113,6 +114,7 @@ namespace Mainichi
 
                 }
             }
+    
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -232,6 +234,7 @@ namespace Mainichi
                 MessageBox.Show("No se pudo actuzalizar el precio de compra del producto.\n" + mensaje, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             cargarProductosCompra();
+            hasChange = true;
         }
 
         private void calcularTotal(TextBox txt, string FormaDePago)

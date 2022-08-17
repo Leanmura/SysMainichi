@@ -213,5 +213,18 @@ namespace Mainichi
             }
                 this.frmCompras.detalleCompra = detalleCompra;
         }
+
+        private void FrmPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if(frmVentasDia.hasChange || frmCompras.hasChange)
+            {
+                DialogResult respuesta = MessageBox.Show("Hay cambios que no han sido guardados. Desea cerrar igualmente?", "SysMainichi", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                if (respuesta == DialogResult.No)
+                {
+                    e.Cancel = true;
+                }
+
+            }
+        }
     }
 }
