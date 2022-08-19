@@ -624,33 +624,55 @@ namespace Mainichi
                 Venta oVenta = new Venta();
                 oVenta.Fecha = fecha;
                 oVenta.CambioAntiguo = decimal.Parse(this.txtCambioAntiguo.Text);
-                oVenta.CambioNuevo = decimal.Parse(this.txtCambioFinal.Text);
+                if(decimal.TryParse(this.txtCambioFinal.Text,out decimal result))
+                {
+                    oVenta.CambioNuevo = result;
+                }
+                else
+                {
+                    MessageBox.Show("Error, uno de los datos fue mal ingresado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
                 oVenta.Gastos = frmCompras.efectivo + frmCompras.mercadoPago + frmCompras.otro;
                 oVenta.MontoTotal = Decimal.Parse(txtEfectivo.Text) - frmCompras.efectivo + oVenta.CambioAntiguo - oVenta.CambioNuevo; // este total es el efectivo total registrado en el programa
                 oVenta.MercadoPago = Decimal.Parse(txtMercadoPago.Text) - frmCompras.mercadoPago;
                 oVenta.Otro = Decimal.Parse(txtOtro.Text) - frmCompras.otro;
                 mdIngresarDato md = new mdIngresarDato("Efectivo", "Ingresar efectivo del dia:");
+
             decimal efectivo;
             if (md.ShowDialog() == DialogResult.OK)
-                decimal.TryParse(md.respuesta, out efectivo);
+                if(decimal.TryParse(md.respuesta, out efectivo))
+                {
+                  oVenta.Efectivo = efectivo; // este es el efectivo real contado a mano
+                }
+                else
+                {
+                    MessageBox.Show("Dato mal ingresado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
             else
                 return;
-            oVenta.Efectivo = efectivo; // este es el efectivo real contado a mano
 
             if (this.isNew)
             {
                 if (new N_Venta().Registrar(oVenta, detalleVenta, frmCompras.detalleCompra, out string mensaje))
                     MessageBox.Show("Venta del " + this.fecha.ToString("dd MMMM") + " guardada.", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else
+                {
                     MessageBox.Show(mensaje, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+
+                }
             }
             else
             {
                 if (new N_Venta().Editar(oVenta, detalleVenta, frmCompras.detalleCompra, out string mensaje))
                     MessageBox.Show("Venta del " + this.fecha.ToString("dd MMMM") + " editada.", "Editado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else
+                {
                     MessageBox.Show(mensaje, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
+                    return;
+                }
             }
             frmCompras.hasChange = false;
             hasChange = false;
@@ -658,5 +680,38 @@ namespace Mainichi
             this.btnGuardar.BackColor = Color.DarkGreen;
         }
 
+        private void txtCambioFinal_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                if (txtCambioFinal.Text.Trim().Length == 0 && e.KeyChar.ToString() == ".")
+                {
+                    e.Handled = true;
+                }
+                else
+                {
+                    if (e.KeyChar.ToString() == ".")
+                    {
+                        e.Handled = false;
+                    }
+                    else
+                    {
+
+                        if (e.KeyChar.ToString() == "\b")
+                        {
+                            e.Handled = false;
+                        }
+                        else
+                        {
+                            e.Handled = true;
+                        }
+                    }
+                }
+            }
+    }
     }
 }

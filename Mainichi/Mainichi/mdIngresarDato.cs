@@ -39,22 +39,28 @@ namespace Mainichi
                 if (txtRespuesta.Text.Trim().Length == 0 && e.KeyChar.ToString() == ".")
                 {
                     e.Handled = true;
-
                 }
                 else
                 {
-                    if (Char.IsControl(e.KeyChar) || e.KeyChar.ToString() == ".")
+                    if (e.KeyChar.ToString() == ".")
                     {
-                        e.Handled = true;
+                        e.Handled = false;
                     }
                     else
                     {
-                        e.Handled = false;
 
+                        if (e.KeyChar.ToString() == "\b")
+                        {
+                            e.Handled = false;
+                        }
+                        else
+                        {
+                            e.Handled = true;
+                        }
                     }
                 }
             }
-        }
+    }
 
         private void mdIngresarDato_Load(object sender, EventArgs e)
         {
