@@ -639,9 +639,8 @@ namespace Mainichi
                 oVenta.Otro = Decimal.Parse(txtOtro.Text) - frmCompras.otro;
                 mdIngresarDato md = new mdIngresarDato("Efectivo", "Ingresar efectivo del dia:");
 
-            decimal efectivo;
             if (md.ShowDialog() == DialogResult.OK)
-                if(decimal.TryParse(md.respuesta, out efectivo))
+                if(decimal.TryParse(md.respuesta, out decimal efectivo))
                 {
                   oVenta.Efectivo = efectivo; // este es el efectivo real contado a mano
                 }
