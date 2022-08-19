@@ -74,7 +74,7 @@ namespace Mainichi
                     btnPrueba.Height = height;
                     btnPrueba.Width = width;
                     btnPrueba.BackgroundImageLayout = ImageLayout.Stretch;
-
+                    btnPrueba.Cursor = Cursors.Hand;
 
 
 

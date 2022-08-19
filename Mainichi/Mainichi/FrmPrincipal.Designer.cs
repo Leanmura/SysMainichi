@@ -175,6 +175,7 @@ namespace Mainichi
             // dateTimePicker
             // 
             this.dateTimePicker.CalendarFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dateTimePicker.CustomFormat = "";
             this.dateTimePicker.Location = new System.Drawing.Point(419, 12);
             this.dateTimePicker.Name = "dateTimePicker";

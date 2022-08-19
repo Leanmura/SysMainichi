@@ -37,6 +37,7 @@ namespace Mainichi
             // 
             // btnOk
             // 
+            this.btnOk.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOk.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOk.Location = new System.Drawing.Point(144, 74);
             this.btnOk.Name = "btnOk";
@@ -48,6 +49,7 @@ namespace Mainichi
             // 
             // btnCancel
             // 
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Location = new System.Drawing.Point(63, 74);

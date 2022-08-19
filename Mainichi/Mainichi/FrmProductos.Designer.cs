@@ -95,6 +95,7 @@ namespace Mainichi
             this.cboBusqueda.AllowDrop = true;
             this.cboBusqueda.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cboBusqueda.BackColor = System.Drawing.SystemColors.Window;
+            this.cboBusqueda.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cboBusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboBusqueda.FormattingEnabled = true;
             this.cboBusqueda.Location = new System.Drawing.Point(683, 27);
@@ -318,6 +319,7 @@ namespace Mainichi
             // 
             this.cboCategoria.AllowDrop = true;
             this.cboCategoria.BackColor = System.Drawing.SystemColors.Window;
+            this.cboCategoria.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cboCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCategoria.FormattingEnabled = true;
             this.cboCategoria.Location = new System.Drawing.Point(21, 201);

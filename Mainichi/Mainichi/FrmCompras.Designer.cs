@@ -318,6 +318,7 @@ namespace Mainichi
             // 
             this.cboFormaDePago.AllowDrop = true;
             this.cboFormaDePago.BackColor = System.Drawing.SystemColors.Window;
+            this.cboFormaDePago.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cboFormaDePago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboFormaDePago.FormattingEnabled = true;
             this.cboFormaDePago.Location = new System.Drawing.Point(121, 38);
@@ -338,6 +339,7 @@ namespace Mainichi
             // 
             // numericCantidad
             // 
+            this.numericCantidad.Cursor = System.Windows.Forms.Cursors.Hand;
             this.numericCantidad.Location = new System.Drawing.Point(207, 7);
             this.numericCantidad.Name = "numericCantidad";
             this.numericCantidad.Size = new System.Drawing.Size(77, 20);
@@ -495,6 +497,7 @@ namespace Mainichi
             // 
             this.cboBusqueda.AllowDrop = true;
             this.cboBusqueda.BackColor = System.Drawing.SystemColors.Window;
+            this.cboBusqueda.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cboBusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboBusqueda.FormattingEnabled = true;
             this.cboBusqueda.Location = new System.Drawing.Point(110, 41);

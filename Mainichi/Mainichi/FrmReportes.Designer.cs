@@ -34,13 +34,6 @@ namespace Mainichi
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnDescargar = new FontAwesome.Sharp.IconButton();
             this.gridReporte = new System.Windows.Forms.DataGridView();
-            this.dateTimeDesde = new System.Windows.Forms.DateTimePicker();
-            this.dateTimeHasta = new System.Windows.Forms.DateTimePicker();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnBuscar = new FontAwesome.Sharp.IconButton();
-            this.lblHasta = new System.Windows.Forms.Label();
-            this.lblDesde = new System.Windows.Forms.Label();
-            this.lblReporteGeneral = new System.Windows.Forms.Label();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Comida = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Kiosco = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,6 +49,13 @@ namespace Mainichi
             this.MercadoPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Otro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalReal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateTimeDesde = new System.Windows.Forms.DateTimePicker();
+            this.dateTimeHasta = new System.Windows.Forms.DateTimePicker();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnBuscar = new FontAwesome.Sharp.IconButton();
+            this.lblHasta = new System.Windows.Forms.Label();
+            this.lblDesde = new System.Windows.Forms.Label();
+            this.lblReporteGeneral = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gridReporte)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -136,96 +136,6 @@ namespace Mainichi
             this.gridReporte.RowTemplate.Height = 25;
             this.gridReporte.Size = new System.Drawing.Size(1240, 569);
             this.gridReporte.TabIndex = 42;
-            // 
-            // dateTimeDesde
-            // 
-            this.dateTimeDesde.CustomFormat = "dd/MM/yyyy";
-            this.dateTimeDesde.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimeDesde.Location = new System.Drawing.Point(892, 30);
-            this.dateTimeDesde.Name = "dateTimeDesde";
-            this.dateTimeDesde.Size = new System.Drawing.Size(97, 20);
-            this.dateTimeDesde.TabIndex = 50;
-            // 
-            // dateTimeHasta
-            // 
-            this.dateTimeHasta.CustomFormat = "dd/MM/yyyy";
-            this.dateTimeHasta.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimeHasta.Location = new System.Drawing.Point(1059, 30);
-            this.dateTimeHasta.Name = "dateTimeHasta";
-            this.dateTimeHasta.Size = new System.Drawing.Size(97, 20);
-            this.dateTimeHasta.TabIndex = 51;
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.SystemColors.Window;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.btnBuscar);
-            this.panel1.Controls.Add(this.lblHasta);
-            this.panel1.Controls.Add(this.lblDesde);
-            this.panel1.Controls.Add(this.lblReporteGeneral);
-            this.panel1.Controls.Add(this.dateTimeHasta);
-            this.panel1.Controls.Add(this.dateTimeDesde);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1240, 74);
-            this.panel1.TabIndex = 52;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBuscar.BackColor = System.Drawing.Color.White;
-            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.IconChar = FontAwesome.Sharp.IconChar.Search;
-            this.btnBuscar.IconColor = System.Drawing.Color.Black;
-            this.btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBuscar.IconSize = 16;
-            this.btnBuscar.Location = new System.Drawing.Point(1169, 30);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnBuscar.Size = new System.Drawing.Size(45, 20);
-            this.btnBuscar.TabIndex = 55;
-            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
-            // lblHasta
-            // 
-            this.lblHasta.AutoSize = true;
-            this.lblHasta.BackColor = System.Drawing.Color.White;
-            this.lblHasta.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHasta.Location = new System.Drawing.Point(1004, 31);
-            this.lblHasta.Name = "lblHasta";
-            this.lblHasta.Size = new System.Drawing.Size(49, 17);
-            this.lblHasta.TabIndex = 54;
-            this.lblHasta.Text = "Hasta:";
-            // 
-            // lblDesde
-            // 
-            this.lblDesde.AutoSize = true;
-            this.lblDesde.BackColor = System.Drawing.Color.White;
-            this.lblDesde.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDesde.Location = new System.Drawing.Point(834, 30);
-            this.lblDesde.Name = "lblDesde";
-            this.lblDesde.Size = new System.Drawing.Size(52, 17);
-            this.lblDesde.TabIndex = 53;
-            this.lblDesde.Text = "Desde:";
-            // 
-            // lblReporteGeneral
-            // 
-            this.lblReporteGeneral.AutoSize = true;
-            this.lblReporteGeneral.BackColor = System.Drawing.Color.White;
-            this.lblReporteGeneral.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReporteGeneral.Location = new System.Drawing.Point(23, 25);
-            this.lblReporteGeneral.Name = "lblReporteGeneral";
-            this.lblReporteGeneral.Size = new System.Drawing.Size(179, 25);
-            this.lblReporteGeneral.TabIndex = 52;
-            this.lblReporteGeneral.Text = "Reporte General";
             // 
             // Fecha
             // 
@@ -332,6 +242,98 @@ namespace Mainichi
             this.TotalReal.ReadOnly = true;
             this.TotalReal.Width = 75;
             // 
+            // dateTimeDesde
+            // 
+            this.dateTimeDesde.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dateTimeDesde.CustomFormat = "dd/MM/yyyy";
+            this.dateTimeDesde.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimeDesde.Location = new System.Drawing.Point(892, 30);
+            this.dateTimeDesde.Name = "dateTimeDesde";
+            this.dateTimeDesde.Size = new System.Drawing.Size(97, 20);
+            this.dateTimeDesde.TabIndex = 50;
+            // 
+            // dateTimeHasta
+            // 
+            this.dateTimeHasta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dateTimeHasta.CustomFormat = "dd/MM/yyyy";
+            this.dateTimeHasta.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimeHasta.Location = new System.Drawing.Point(1059, 30);
+            this.dateTimeHasta.Name = "dateTimeHasta";
+            this.dateTimeHasta.Size = new System.Drawing.Size(97, 20);
+            this.dateTimeHasta.TabIndex = 51;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.SystemColors.Window;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnBuscar);
+            this.panel1.Controls.Add(this.lblHasta);
+            this.panel1.Controls.Add(this.lblDesde);
+            this.panel1.Controls.Add(this.lblReporteGeneral);
+            this.panel1.Controls.Add(this.dateTimeHasta);
+            this.panel1.Controls.Add(this.dateTimeDesde);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1240, 74);
+            this.panel1.TabIndex = 52;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBuscar.BackColor = System.Drawing.Color.White;
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.btnBuscar.IconColor = System.Drawing.Color.Black;
+            this.btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBuscar.IconSize = 16;
+            this.btnBuscar.Location = new System.Drawing.Point(1169, 30);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnBuscar.Size = new System.Drawing.Size(45, 20);
+            this.btnBuscar.TabIndex = 55;
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // lblHasta
+            // 
+            this.lblHasta.AutoSize = true;
+            this.lblHasta.BackColor = System.Drawing.Color.White;
+            this.lblHasta.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHasta.Location = new System.Drawing.Point(1004, 31);
+            this.lblHasta.Name = "lblHasta";
+            this.lblHasta.Size = new System.Drawing.Size(49, 17);
+            this.lblHasta.TabIndex = 54;
+            this.lblHasta.Text = "Hasta:";
+            // 
+            // lblDesde
+            // 
+            this.lblDesde.AutoSize = true;
+            this.lblDesde.BackColor = System.Drawing.Color.White;
+            this.lblDesde.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesde.Location = new System.Drawing.Point(834, 30);
+            this.lblDesde.Name = "lblDesde";
+            this.lblDesde.Size = new System.Drawing.Size(52, 17);
+            this.lblDesde.TabIndex = 53;
+            this.lblDesde.Text = "Desde:";
+            // 
+            // lblReporteGeneral
+            // 
+            this.lblReporteGeneral.AutoSize = true;
+            this.lblReporteGeneral.BackColor = System.Drawing.Color.White;
+            this.lblReporteGeneral.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReporteGeneral.Location = new System.Drawing.Point(23, 25);
+            this.lblReporteGeneral.Name = "lblReporteGeneral";
+            this.lblReporteGeneral.Size = new System.Drawing.Size(179, 25);
+            this.lblReporteGeneral.TabIndex = 52;
+            this.lblReporteGeneral.Text = "Reporte General";
+            // 
             // FrmReportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -340,6 +342,7 @@ namespace Mainichi
             this.Controls.Add(this.btnDescargar);
             this.Controls.Add(this.gridReporte);
             this.Controls.Add(this.panel1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "FrmReportes";
             this.Text = "FrmReportes";
             this.Load += new System.EventHandler(this.FrmReportes_Load);

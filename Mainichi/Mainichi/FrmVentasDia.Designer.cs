@@ -29,9 +29,9 @@ namespace Mainichi
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabKiosco = new System.Windows.Forms.TabPage();
             this.tabComidas = new System.Windows.Forms.TabPage();
             this.tabBebidas = new System.Windows.Forms.TabPage();
@@ -86,6 +86,7 @@ namespace Mainichi
             // 
             // tabKiosco
             // 
+            this.tabKiosco.Cursor = System.Windows.Forms.Cursors.Default;
             this.tabKiosco.Location = new System.Drawing.Point(4, 29);
             this.tabKiosco.Name = "tabKiosco";
             this.tabKiosco.Padding = new System.Windows.Forms.Padding(3);
@@ -96,6 +97,7 @@ namespace Mainichi
             // 
             // tabComidas
             // 
+            this.tabComidas.Cursor = System.Windows.Forms.Cursors.Default;
             this.tabComidas.Location = new System.Drawing.Point(4, 29);
             this.tabComidas.Name = "tabComidas";
             this.tabComidas.Padding = new System.Windows.Forms.Padding(3);
@@ -107,6 +109,7 @@ namespace Mainichi
             // tabBebidas
             // 
             this.tabBebidas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabBebidas.Cursor = System.Windows.Forms.Cursors.Default;
             this.tabBebidas.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabBebidas.Location = new System.Drawing.Point(4, 29);
             this.tabBebidas.Margin = new System.Windows.Forms.Padding(5);
@@ -220,6 +223,7 @@ namespace Mainichi
             this.tabControl.Controls.Add(this.tabComidas);
             this.tabControl.Controls.Add(this.tabKiosco);
             this.tabControl.Controls.Add(this.tabCancha);
+            this.tabControl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tabControl.ItemSize = new System.Drawing.Size(70, 25);
             this.tabControl.Location = new System.Drawing.Point(4, 0);
             this.tabControl.Margin = new System.Windows.Forms.Padding(0);
@@ -232,6 +236,7 @@ namespace Mainichi
             // 
             // tabCancha
             // 
+            this.tabCancha.Cursor = System.Windows.Forms.Cursors.Default;
             this.tabCancha.Location = new System.Drawing.Point(4, 29);
             this.tabCancha.Name = "tabCancha";
             this.tabCancha.Padding = new System.Windows.Forms.Padding(3);
@@ -256,15 +261,15 @@ namespace Mainichi
             this.gridVenta.AccessibleName = "General";
             this.gridVenta.AllowUserToAddRows = false;
             this.gridVenta.BackgroundColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridVenta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridVenta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridVenta.ColumnHeadersHeight = 30;
             this.gridVenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.gridVenta.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -278,18 +283,18 @@ namespace Mainichi
             this.gridVenta.MultiSelect = false;
             this.gridVenta.Name = "gridVenta";
             this.gridVenta.ReadOnly = true;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridVenta.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridVenta.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridVenta.RowHeadersVisible = false;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            this.gridVenta.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.gridVenta.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.gridVenta.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.gridVenta.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.SystemColors.MenuText;
             this.gridVenta.RowTemplate.Height = 29;
@@ -345,6 +350,7 @@ namespace Mainichi
             // 
             // cboVentas
             // 
+            this.cboVentas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cboVentas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboVentas.FormattingEnabled = true;
             this.cboVentas.Items.AddRange(new object[] {
@@ -357,6 +363,7 @@ namespace Mainichi
             // 
             // btnNuevaCuenta
             // 
+            this.btnNuevaCuenta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNuevaCuenta.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevaCuenta.IconChar = FontAwesome.Sharp.IconChar.Plus;
             this.btnNuevaCuenta.IconColor = System.Drawing.Color.Green;
@@ -419,6 +426,7 @@ namespace Mainichi
             // 
             this.rBtnMP.AccessibleName = "MercadoPago";
             this.rBtnMP.AutoSize = true;
+            this.rBtnMP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rBtnMP.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rBtnMP.Location = new System.Drawing.Point(11, 2);
             this.rBtnMP.Name = "rBtnMP";
@@ -444,6 +452,7 @@ namespace Mainichi
             // 
             this.rBtnOtro.AccessibleName = "Otro";
             this.rBtnOtro.AutoSize = true;
+            this.rBtnOtro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rBtnOtro.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rBtnOtro.Location = new System.Drawing.Point(11, 56);
             this.rBtnOtro.Name = "rBtnOtro";
@@ -457,6 +466,7 @@ namespace Mainichi
             // 
             this.rBtnEfectivo.AccessibleName = "Efectivo";
             this.rBtnEfectivo.AutoSize = true;
+            this.rBtnEfectivo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rBtnEfectivo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rBtnEfectivo.Location = new System.Drawing.Point(11, 29);
             this.rBtnEfectivo.Name = "rBtnEfectivo";
