@@ -646,7 +646,6 @@ namespace Mainichi
             }
             else
             {
-
                 if (new N_Venta().Editar(oVenta, detalleVenta, frmCompras.detalleCompra, out string mensaje))
                     MessageBox.Show("Venta del " + this.fecha.ToString("dd MMMM") + " editada.", "Editado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else
@@ -655,6 +654,8 @@ namespace Mainichi
             }
             frmCompras.hasChange = false;
             hasChange = false;
+            this.isNew = false;
+            this.btnGuardar.BackColor = Color.DarkGreen;
         }
 
     }
