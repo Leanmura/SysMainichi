@@ -186,9 +186,9 @@ namespace Mainichi
                 this.isNew = true;
             }
 
-            calcularTotal(txtEfectivo, "Efectivo");
-            calcularTotal(txtMercadoPago, "MercadoPago");
-            calcularTotal(txtOtro, "Otro");
+            //calcularTotal(txtEfectivo, "Efectivo");
+            //calcularTotal(txtMercadoPago, "MercadoPago");
+            //calcularTotal(txtOtro, "Otro");
         }
 
 
@@ -232,31 +232,31 @@ namespace Mainichi
                 1*this.lista[index].PrecioVenta,
                 formaDePago
             }) ;
-            if (gridActivo.AccessibleName != "General")
-            {
-                calcularTotal(txtTotalPagar, "");
+            //if (gridActivo.AccessibleName != "General")
+            //{
+            //    calcularTotal(txtTotalPagar, "");
 
-            }
-            else
-            {
-                switch (formaDePago)
-                {
-                    case "Efectivo":
-                        calcularTotal(txtEfectivo, formaDePago);
-                        break;
+            //}
+            //else
+            //{
+            //    switch (formaDePago)
+            //    {
+            //        case "Efectivo":
+            //            calcularTotal(txtEfectivo, formaDePago);
+            //            break;
 
-                    case "MercadoPago":
-                        calcularTotal(txtMercadoPago, formaDePago);
+            //        case "MercadoPago":
+            //            calcularTotal(txtMercadoPago, formaDePago);
 
-                        break;
+            //            break;
 
-                    default://"Otro"
-                        calcularTotal(txtOtro, formaDePago);
+            //        default://"Otro"
+            //            calcularTotal(txtOtro, formaDePago);
 
-                        break;
-                }
+            //            break;
+            //    }
 
-            }
+            //}
             hasChange = true;
         }
 
@@ -369,9 +369,9 @@ namespace Mainichi
                         }
                         else
                         {
-                            panelEfectivo.Visible = true;
-                            panelMercadoPago.Visible = true;
-                            panelOtro.Visible = true;
+                            //panelEfectivo.Visible = true;
+                            //panelMercadoPago.Visible = true;
+                            //panelOtro.Visible = true;
                             btnGuardar.Visible = true;
                             panelCambio.Visible = true;
                             btnEliminar.Location = new Point(993, 544);
@@ -549,10 +549,10 @@ namespace Mainichi
 
             this.cboVentas.SelectedIndex = 0; // seteo la ceunta de ventas general en el combobox
             gridActivo.Visible = true;
-            panelEfectivo.Visible = true;
+            //panelEfectivo.Visible = true;
             panelCambio.Visible = true;
-            panelMercadoPago.Visible = true;
-            panelOtro.Visible = true;
+            //panelMercadoPago.Visible = true;
+            //panelOtro.Visible = true;
 
             btnEliminar.Location = new Point(993, 544);
             panelPagar.Visible = false;

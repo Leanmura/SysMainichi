@@ -109,7 +109,9 @@ namespace Mainichi
                                 fila.Cells[10].Value.ToString(),
                                 fila.Cells[11].Value.ToString(),
                                 fila.Cells[12].Value.ToString(),
-                                fila.Cells[13].Value.ToString()
+                                fila.Cells[13].Value.ToString(),
+                                fila.Cells[14].Value.ToString()
+
                             });
 
                         }

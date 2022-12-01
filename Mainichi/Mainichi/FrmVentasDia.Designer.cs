@@ -29,9 +29,9 @@ namespace Mainichi
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabKiosco = new System.Windows.Forms.TabPage();
             this.tabComidas = new System.Windows.Forms.TabPage();
             this.tabBebidas = new System.Windows.Forms.TabPage();
@@ -66,22 +66,22 @@ namespace Mainichi
             this.panelOtro = new System.Windows.Forms.Panel();
             this.lblOtro = new System.Windows.Forms.Label();
             this.txtOtro = new System.Windows.Forms.TextBox();
-            this.txtMercadoPago = new System.Windows.Forms.TextBox();
-            this.lblMercadoPago = new System.Windows.Forms.Label();
-            this.panelMercadoPago = new System.Windows.Forms.Panel();
             this.panelCambio = new System.Windows.Forms.Panel();
             this.txtCambioFinal = new System.Windows.Forms.TextBox();
             this.lblCambioAntiguo = new System.Windows.Forms.Label();
             this.txtCambioAntiguo = new System.Windows.Forms.TextBox();
             this.lblCambioFinal = new System.Windows.Forms.Label();
+            this.txtMercadoPago = new System.Windows.Forms.TextBox();
+            this.lblMercadoPago = new System.Windows.Forms.Label();
+            this.panelMercadoPago = new System.Windows.Forms.Panel();
             this.panelPagar.SuspendLayout();
             this.tabControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridVenta)).BeginInit();
             this.panelEfectivo.SuspendLayout();
             this.panelFormaDePago.SuspendLayout();
             this.panelOtro.SuspendLayout();
-            this.panelMercadoPago.SuspendLayout();
             this.panelCambio.SuspendLayout();
+            this.panelMercadoPago.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabKiosco
@@ -261,15 +261,15 @@ namespace Mainichi
             this.gridVenta.AccessibleName = "General";
             this.gridVenta.AllowUserToAddRows = false;
             this.gridVenta.BackgroundColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridVenta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridVenta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridVenta.ColumnHeadersHeight = 30;
             this.gridVenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.gridVenta.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -283,18 +283,18 @@ namespace Mainichi
             this.gridVenta.MultiSelect = false;
             this.gridVenta.Name = "gridVenta";
             this.gridVenta.ReadOnly = true;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridVenta.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridVenta.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridVenta.RowHeadersVisible = false;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            this.gridVenta.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.gridVenta.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.gridVenta.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.gridVenta.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.SystemColors.MenuText;
             this.gridVenta.RowTemplate.Height = 29;
@@ -421,6 +421,7 @@ namespace Mainichi
             this.panelEfectivo.Name = "panelEfectivo";
             this.panelEfectivo.Size = new System.Drawing.Size(208, 51);
             this.panelEfectivo.TabIndex = 0;
+            this.panelEfectivo.Visible = false;
             // 
             // rBtnMP
             // 
@@ -508,6 +509,7 @@ namespace Mainichi
             this.panelOtro.Name = "panelOtro";
             this.panelOtro.Size = new System.Drawing.Size(181, 51);
             this.panelOtro.TabIndex = 34;
+            this.panelOtro.Visible = false;
             // 
             // lblOtro
             // 
@@ -529,39 +531,6 @@ namespace Mainichi
             this.txtOtro.Size = new System.Drawing.Size(102, 29);
             this.txtOtro.TabIndex = 1;
             this.txtOtro.Text = "0.00";
-            // 
-            // txtMercadoPago
-            // 
-            this.txtMercadoPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMercadoPago.Location = new System.Drawing.Point(60, 12);
-            this.txtMercadoPago.Margin = new System.Windows.Forms.Padding(5);
-            this.txtMercadoPago.Multiline = true;
-            this.txtMercadoPago.Name = "txtMercadoPago";
-            this.txtMercadoPago.ReadOnly = true;
-            this.txtMercadoPago.Size = new System.Drawing.Size(102, 29);
-            this.txtMercadoPago.TabIndex = 1;
-            this.txtMercadoPago.Text = "0.00";
-            // 
-            // lblMercadoPago
-            // 
-            this.lblMercadoPago.AutoSize = true;
-            this.lblMercadoPago.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMercadoPago.Location = new System.Drawing.Point(3, 14);
-            this.lblMercadoPago.Name = "lblMercadoPago";
-            this.lblMercadoPago.Size = new System.Drawing.Size(49, 25);
-            this.lblMercadoPago.TabIndex = 32;
-            this.lblMercadoPago.Text = "MP:";
-            // 
-            // panelMercadoPago
-            // 
-            this.panelMercadoPago.BackColor = System.Drawing.SystemColors.Window;
-            this.panelMercadoPago.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelMercadoPago.Controls.Add(this.lblMercadoPago);
-            this.panelMercadoPago.Controls.Add(this.txtMercadoPago);
-            this.panelMercadoPago.Location = new System.Drawing.Point(228, 582);
-            this.panelMercadoPago.Name = "panelMercadoPago";
-            this.panelMercadoPago.Size = new System.Drawing.Size(173, 51);
-            this.panelMercadoPago.TabIndex = 33;
             // 
             // panelCambio
             // 
@@ -618,6 +587,40 @@ namespace Mainichi
             this.lblCambioFinal.TabIndex = 46;
             this.lblCambioFinal.Text = "Cambio Final:";
             // 
+            // txtMercadoPago
+            // 
+            this.txtMercadoPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMercadoPago.Location = new System.Drawing.Point(60, 12);
+            this.txtMercadoPago.Margin = new System.Windows.Forms.Padding(5);
+            this.txtMercadoPago.Multiline = true;
+            this.txtMercadoPago.Name = "txtMercadoPago";
+            this.txtMercadoPago.ReadOnly = true;
+            this.txtMercadoPago.Size = new System.Drawing.Size(102, 29);
+            this.txtMercadoPago.TabIndex = 1;
+            this.txtMercadoPago.Text = "0.00";
+            // 
+            // lblMercadoPago
+            // 
+            this.lblMercadoPago.AutoSize = true;
+            this.lblMercadoPago.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMercadoPago.Location = new System.Drawing.Point(3, 14);
+            this.lblMercadoPago.Name = "lblMercadoPago";
+            this.lblMercadoPago.Size = new System.Drawing.Size(49, 25);
+            this.lblMercadoPago.TabIndex = 32;
+            this.lblMercadoPago.Text = "MP:";
+            // 
+            // panelMercadoPago
+            // 
+            this.panelMercadoPago.BackColor = System.Drawing.SystemColors.Window;
+            this.panelMercadoPago.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMercadoPago.Controls.Add(this.lblMercadoPago);
+            this.panelMercadoPago.Controls.Add(this.txtMercadoPago);
+            this.panelMercadoPago.Location = new System.Drawing.Point(228, 582);
+            this.panelMercadoPago.Name = "panelMercadoPago";
+            this.panelMercadoPago.Size = new System.Drawing.Size(173, 51);
+            this.panelMercadoPago.TabIndex = 33;
+            this.panelMercadoPago.Visible = false;
+            // 
             // FrmVentasDia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -650,10 +653,10 @@ namespace Mainichi
             this.panelFormaDePago.PerformLayout();
             this.panelOtro.ResumeLayout(false);
             this.panelOtro.PerformLayout();
-            this.panelMercadoPago.ResumeLayout(false);
-            this.panelMercadoPago.PerformLayout();
             this.panelCambio.ResumeLayout(false);
             this.panelCambio.PerformLayout();
+            this.panelMercadoPago.ResumeLayout(false);
+            this.panelMercadoPago.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -692,14 +695,14 @@ namespace Mainichi
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Total;
         private System.Windows.Forms.DataGridViewTextBoxColumn FormaDePago;
-        private System.Windows.Forms.TextBox txtMercadoPago;
-        private System.Windows.Forms.Label lblMercadoPago;
-        private System.Windows.Forms.Panel panelMercadoPago;
         private System.Windows.Forms.Panel panelCambio;
         private System.Windows.Forms.TextBox txtCambioFinal;
         private System.Windows.Forms.Label lblCambioAntiguo;
         private System.Windows.Forms.TextBox txtCambioAntiguo;
         private System.Windows.Forms.Label lblCambioFinal;
         private System.Windows.Forms.TabPage tabCancha;
+        private System.Windows.Forms.TextBox txtMercadoPago;
+        private System.Windows.Forms.Label lblMercadoPago;
+        private System.Windows.Forms.Panel panelMercadoPago;
     }
 }
