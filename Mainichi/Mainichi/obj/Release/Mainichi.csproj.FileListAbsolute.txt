@@ -41,3 +41,4 @@ E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Release\SysMainichi.application
 E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Release\Mainichi.csproj.CopyComplete
 E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Release\SysMainichi.exe
 E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Release\SysMainichi.pdb
+E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Release\Mainichi.FrmAumentarPrecios.resources

@@ -85,7 +85,19 @@ namespace Mainichi
 
         private void menuReportes_Click(object sender, EventArgs e)
         {
-            this.AbrirFrmHijo((IconMenuItem)sender, new FrmReportes());
+            mdIngresarDato ingresarDato =  new mdIngresarDato("Acceso a reportes", "Ingrese la clave:");
+          
+            if(ingresarDato.ShowDialog() == DialogResult.OK)
+            {
+                if(ingresarDato.respuesta == "1234")
+                {
+                    this.AbrirFrmHijo((IconMenuItem)sender, new FrmReportes());
+                }
+                else
+                {
+                    DialogResult respuesta = MessageBox.Show("Clave incorrecta", "SysMainichi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
 
         }
 

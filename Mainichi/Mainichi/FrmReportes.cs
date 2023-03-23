@@ -28,7 +28,7 @@ namespace Mainichi
 
         }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
+        private void BtnBuscar_Click(object sender, EventArgs e)
         {
             gridReporte.Rows.Clear();
             desde = dateTimeDesde.Value;

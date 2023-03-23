@@ -390,5 +390,32 @@ namespace Mainichi
                 }
             }
         }
+
+        private void btnAumentar_Click(object sender, EventArgs e)
+        {
+            if(new FrmAumentarPrecios().ShowDialog() == DialogResult.OK)
+            {
+                MessageBox.Show("Productos actulizados", "Actualizar precios", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.cargarProductos();
+            }
+            
+        }
+
+        private void cargarProductos()
+        {
+            List<Producto> lista = new N_Producto().Listar();
+
+            foreach (Producto item in lista)
+            {
+                foreach (DataGridViewRow row in gridProductos.Rows)
+                {
+                    if (row.Cells["IdProducto"].Value.ToString() == item.IdProducto.ToString()
+                        && row.Cells["PrecioVenta"].Value.ToString() != item.PrecioVenta.ToString())
+                    {
+                        row.Cells["PrecioVenta"].Value = item.PrecioVenta.ToString();
+                    }
+                }
+            }
+        }
     }
 }

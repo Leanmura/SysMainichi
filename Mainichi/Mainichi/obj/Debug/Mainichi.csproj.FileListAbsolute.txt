@@ -61,3 +61,4 @@ E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Debug\SysMainichi.application
 E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Debug\Mainichi.csproj.CopyComplete
 E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Debug\SysMainichi.exe
 E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Debug\SysMainichi.pdb
+E:\MyApps\MainichiApp\Mainichi\Mainichi\obj\Debug\Mainichi.FrmAumentarPrecios.resources

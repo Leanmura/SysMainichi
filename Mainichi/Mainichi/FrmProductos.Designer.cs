@@ -59,6 +59,8 @@ namespace Mainichi
             this.txtVenta = new System.Windows.Forms.TextBox();
             this.lblVenta = new System.Windows.Forms.Label();
             this.lblLogo = new System.Windows.Forms.Label();
+            this.txtPrecioCompra = new System.Windows.Forms.TextBox();
+            this.btnAumentar = new FontAwesome.Sharp.IconButton();
             this.btnSubir = new FontAwesome.Sharp.IconButton();
             this.picImagen = new System.Windows.Forms.PictureBox();
             this.btnDescargar = new FontAwesome.Sharp.IconButton();
@@ -67,7 +69,6 @@ namespace Mainichi
             this.btnEliminar = new FontAwesome.Sharp.IconButton();
             this.btnLimpiar = new FontAwesome.Sharp.IconButton();
             this.btnGuardar = new FontAwesome.Sharp.IconButton();
-            this.txtPrecioCompra = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridProductos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picImagen)).BeginInit();
             this.SuspendLayout();
@@ -368,6 +369,39 @@ namespace Mainichi
             this.lblLogo.TabIndex = 46;
             this.lblLogo.Text = "Imagen:";
             // 
+            // txtPrecioCompra
+            // 
+            this.txtPrecioCompra.Location = new System.Drawing.Point(21, 404);
+            this.txtPrecioCompra.Name = "txtPrecioCompra";
+            this.txtPrecioCompra.Size = new System.Drawing.Size(186, 20);
+            this.txtPrecioCompra.TabIndex = 47;
+            this.txtPrecioCompra.Text = "0.00";
+            this.txtPrecioCompra.Visible = false;
+            // 
+            // btnAumentar
+            // 
+            this.btnAumentar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAumentar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAumentar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAumentar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnAumentar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAumentar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAumentar.ForeColor = System.Drawing.Color.Black;
+            this.btnAumentar.IconChar = FontAwesome.Sharp.IconChar.Percent;
+            this.btnAumentar.IconColor = System.Drawing.Color.Black;
+            this.btnAumentar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAumentar.IconSize = 18;
+            this.btnAumentar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAumentar.Location = new System.Drawing.Point(828, 537);
+            this.btnAumentar.Name = "btnAumentar";
+            this.btnAumentar.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnAumentar.Size = new System.Drawing.Size(105, 28);
+            this.btnAumentar.TabIndex = 48;
+            this.btnAumentar.Text = "Aumentar";
+            this.btnAumentar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAumentar.UseVisualStyleBackColor = false;
+            this.btnAumentar.Click += new System.EventHandler(this.btnAumentar_Click);
+            // 
             // btnSubir
             // 
             this.btnSubir.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -535,20 +569,12 @@ namespace Mainichi
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // txtPrecioCompra
-            // 
-            this.txtPrecioCompra.Location = new System.Drawing.Point(21, 404);
-            this.txtPrecioCompra.Name = "txtPrecioCompra";
-            this.txtPrecioCompra.Size = new System.Drawing.Size(186, 20);
-            this.txtPrecioCompra.TabIndex = 47;
-            this.txtPrecioCompra.Text = "0.00";
-            this.txtPrecioCompra.Visible = false;
-            // 
             // FrmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1053, 573);
+            this.Controls.Add(this.btnAumentar);
             this.Controls.Add(this.txtPrecioCompra);
             this.Controls.Add(this.lblLogo);
             this.Controls.Add(this.btnSubir);
@@ -624,5 +650,6 @@ namespace Mainichi
         private System.Windows.Forms.DataGridViewTextBoxColumn PrecioCompra;
         private System.Windows.Forms.DataGridViewImageColumn Imagen;
         private System.Windows.Forms.TextBox txtPrecioCompra;
+        private FontAwesome.Sharp.IconButton btnAumentar;
     }
 }

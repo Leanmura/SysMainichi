@@ -115,6 +115,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DBSISTEMA_MAINICHIDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FrmAumentarPrecios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAumentarPrecios.Designer.cs">
+      <DependentUpon>FrmAumentarPrecios.cs</DependentUpon>
+    </Compile>
     <Compile Include="mdAcercaDe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Utilidades\OpcionCombo.cs" />
+    <EmbeddedResource Include="FrmAumentarPrecios.resx">
+      <DependentUpon>FrmAumentarPrecios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCategorias.resx">
       <DependentUpon>FrmCategorias.cs</DependentUpon>
     </EmbeddedResource>
