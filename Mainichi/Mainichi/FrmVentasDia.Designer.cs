@@ -641,7 +641,7 @@ namespace Mainichi
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmVentasDia";
             this.Padding = new System.Windows.Forms.Padding(4, 0, 4, 4);
-            this.Text = "FrmVentasDia";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.FrmVentasDia_Load);
             this.panelPagar.ResumeLayout(false);
             this.panelPagar.PerformLayout();

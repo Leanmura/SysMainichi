@@ -156,7 +156,16 @@ namespace Mainichi
             Venta oVenta = new N_Venta().TraerVenta(fecha);
             List<DetalleVenta> listaDetalleVenta = oVenta.ODetalleVenta;
             if(oVenta.CambioAntiguo == 0)
+            {
+                if(fecha.DayOfWeek == DayOfWeek.Monday)
+                {
+                    this.txtCambioAntiguo.Text = new N_Venta().TraerVenta(fecha.AddDays(-2)).CambioNuevo.ToString();
+                }
+                else
+                {
                 this.txtCambioAntiguo.Text = new N_Venta().TraerVenta(fecha.AddDays(-1)).CambioNuevo.ToString();
+                }
+            } 
             else
                 this.txtCambioAntiguo.Text = oVenta.CambioAntiguo.ToString();
             this.txtCambioFinal.Text = oVenta.CambioNuevo.ToString();
@@ -186,9 +195,9 @@ namespace Mainichi
                 this.isNew = true;
             }
 
-            //calcularTotal(txtEfectivo, "Efectivo");
-            //calcularTotal(txtMercadoPago, "MercadoPago");
-            //calcularTotal(txtOtro, "Otro");
+            calcularTotal(txtEfectivo, "Efectivo");
+            calcularTotal(txtMercadoPago, "MercadoPago");
+            calcularTotal(txtOtro, "Otro");
         }
 
 
@@ -232,31 +241,31 @@ namespace Mainichi
                 1*this.lista[index].PrecioVenta,
                 formaDePago
             }) ;
-            //if (gridActivo.AccessibleName != "General")
-            //{
-            //    calcularTotal(txtTotalPagar, "");
+            if (gridActivo.AccessibleName != "General")
+            {
+                calcularTotal(txtTotalPagar, "");
 
-            //}
-            //else
-            //{
-            //    switch (formaDePago)
-            //    {
-            //        case "Efectivo":
-            //            calcularTotal(txtEfectivo, formaDePago);
-            //            break;
+            }
+            else
+            {
+                switch (formaDePago)
+                {
+                    case "Efectivo":
+                        calcularTotal(txtEfectivo, formaDePago);
+                        break;
 
-            //        case "MercadoPago":
-            //            calcularTotal(txtMercadoPago, formaDePago);
+                    case "MercadoPago":
+                        calcularTotal(txtMercadoPago, formaDePago);
 
-            //            break;
+                        break;
 
-            //        default://"Otro"
-            //            calcularTotal(txtOtro, formaDePago);
+                    default://"Otro"
+                        calcularTotal(txtOtro, formaDePago);
 
-            //            break;
-            //    }
+                        break;
+                }
 
-            //}
+            }
             hasChange = true;
         }
 
