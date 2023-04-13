@@ -448,12 +448,10 @@ namespace Mainichi
                 }
                 else
                 {
-
                     calcularTotal(txtEfectivo, "Efectivo");
                     calcularTotal(txtMercadoPago, "MercadoPago");
                     calcularTotal(txtOtro, "Otro");
-
-
+                    hasChange = true;
                 }
             }
         }

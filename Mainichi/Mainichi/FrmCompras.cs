@@ -322,7 +322,7 @@ namespace Mainichi
                     calcularTotal(txtEfectivo, "Efectivo");
                     calcularTotal(txtMercadoPago, "MercadoPago");
                     calcularTotal(txtOtro, "Otro");
-
+                    this.hasChange = true;
                 }
             }
         }
