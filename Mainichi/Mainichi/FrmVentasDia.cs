@@ -721,5 +721,6 @@ namespace Mainichi
                 }
             }
     }
+
     }
 }

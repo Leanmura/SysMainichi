@@ -19,7 +19,8 @@ namespace Mainichi
         private static IconMenuItem menuActivo = null;
         private FrmVentasDia frmVentasDia = null;
         private FrmCompras frmCompras = null;
-
+        private DateTime originalDate;
+        private  bool salir = true;
 
         public FrmPrincipal()
         {
@@ -125,6 +126,19 @@ namespace Mainichi
 
         private void dateTimePicker_ValueChanged(object sender, EventArgs e)
         {
+            if (frmVentasDia.hasChange || frmCompras.hasChange)
+            {
+                if(salir)
+                {
+                    DialogResult respuesta = MessageBox.Show("Hay cambios que no han sido guardados. Desea continuar?", "SysMainichi", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                    if (respuesta == DialogResult.No)
+                    {
+                        salir = false;
+                    }
+                }
+            }
+            if (salir)
+            {
             Venta oVenta = new N_Venta().TraerVenta(((DateTimePicker)sender).Value);
 
             // copio mis detalles de compras en un datatable
@@ -150,8 +164,8 @@ namespace Mainichi
                      });
 
                 }
-
             }
+    
             if (FrmPrincipal.frmActivo == this.frmVentasDia)
             {
                 this.frmCompras.Close();
@@ -190,7 +204,12 @@ namespace Mainichi
                 this.frmVentasDia.Close();
                 this.frmVentasDia = new FrmVentasDia(((DateTimePicker)sender).Value, this.frmCompras);
             }
-
+            }
+            else
+            {
+                ((DateTimePicker)sender).Value = originalDate;
+                salir = true;
+            }
         }
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
@@ -234,11 +253,17 @@ namespace Mainichi
                 if (respuesta == DialogResult.No)
                 {
                     e.Cancel = true;
+       
                 }
 
             }
         }
 
 
+        private void dateTimePicker_DropDown(object sender, EventArgs e)
+        {
+            originalDate = ((DateTimePicker)sender).Value;
+
+        }
     }
 }

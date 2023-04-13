@@ -182,6 +182,7 @@ namespace Mainichi
             this.dateTimePicker.Size = new System.Drawing.Size(199, 20);
             this.dateTimePicker.TabIndex = 3;
             this.dateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker_ValueChanged);
+            this.dateTimePicker.DropDown += new System.EventHandler(this.dateTimePicker_DropDown);
             // 
             // panel1
             // 
