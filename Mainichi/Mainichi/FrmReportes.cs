@@ -51,21 +51,21 @@ namespace Mainichi
                 gridReporte.Rows.Add(
                     new object[]
                     {
-                         desde.ToString("dd/MM/yyyy"),
-                         comida,
-                         kiosco + golosina + galletitas + snack,
-                         bebida,
-                         cerveza,
-                         canchas + torneo,
-                         juegos,
-                         oVenta.Gastos,
-                         oVenta.CambioAntiguo,
-                         oVenta.CambioNuevo,
-                         comida + kiosco + golosina + galletitas + snack+ bebida+cerveza+canchas+torneo-oVenta.Gastos+oVenta.CambioAntiguo-oVenta.CambioNuevo,
-                         oVenta.MontoTotal,
-                         oVenta.MercadoPago,
-                         oVenta.Otro,
-                         oVenta.Efectivo
+                         desde.ToString("dd/MM/yyyy"), //Fecha  
+                         comida, // comida
+                         kiosco + golosina  + galletitas + snack, // Kiosco
+                         bebida, // Bebida
+                         cerveza, // Cerveza
+                         canchas + torneo, // Canchas
+                         juegos, // Juegos
+                         oVenta.Gastos, // Gastos
+                         oVenta.CambioAntiguo, // Cambio
+                         oVenta.CambioNuevo, // Cambio nuevo
+                         comida + kiosco + golosina + galletitas + snack+ bebida+cerveza+canchas+torneo-oVenta.Gastos+oVenta.CambioAntiguo-oVenta.CambioNuevo, // Total Entrada
+                         oVenta.MontoTotal, // Efectivo
+                         oVenta.MercadoPago, // Mp
+                         oVenta.Otro, // Otro
+                         oVenta.Efectivo // efectivo Real
 
                     });
                 desde = desde.AddDays(1);

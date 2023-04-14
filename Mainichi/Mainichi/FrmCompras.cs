@@ -276,6 +276,7 @@ namespace Mainichi
                 e.Handled = true;
             }
         }
+
         private void txtPrecioCompra_KeyPress(object sender, KeyPressEventArgs e)
         {
 

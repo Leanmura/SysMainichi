@@ -154,6 +154,7 @@ namespace Mainichi
 
             // Cargo las ventas del dia, si es que el dia ya fue cargado
             Venta oVenta = new N_Venta().TraerVenta(fecha);
+           
             List<DetalleVenta> listaDetalleVenta = oVenta.ODetalleVenta;
             if(oVenta.CambioAntiguo == 0)
             {
@@ -641,6 +642,7 @@ namespace Mainichi
                     return;
                 }
                 oVenta.Gastos = frmCompras.efectivo + frmCompras.mercadoPago + frmCompras.otro;
+       
                 oVenta.MontoTotal = Decimal.Parse(txtEfectivo.Text) - frmCompras.efectivo + oVenta.CambioAntiguo - oVenta.CambioNuevo; // este total es el efectivo total registrado en el programa
                 oVenta.MercadoPago = Decimal.Parse(txtMercadoPago.Text) - frmCompras.mercadoPago;
                 oVenta.Otro = Decimal.Parse(txtOtro.Text) - frmCompras.otro;

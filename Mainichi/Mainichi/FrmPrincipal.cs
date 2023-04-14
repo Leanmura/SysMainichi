@@ -172,6 +172,7 @@ namespace Mainichi
                 this.frmCompras = new FrmCompras(); // es al pedo crear simpr euna instancia nueva, solo hay que borrar el datagrid
 
                 this.frmCompras.detalleCompra = detalleCompra;
+                completarFrmCompras();
 
                 this.frmVentasDia.Close();
                 FrmPrincipal.frmActivo = new FrmVentasDia(((DateTimePicker)sender).Value, this.frmCompras);
@@ -264,6 +265,36 @@ namespace Mainichi
         {
             originalDate = ((DateTimePicker)sender).Value;
 
+        }
+
+        private void completarFrmCompras()
+        {
+            decimal gastoMercadoPago = 0;
+            decimal gastoOtro = 0;
+            decimal gastoEfectivo = 0;
+            foreach (DataRow item in this.frmCompras.detalleCompra.Rows)
+            {
+                if((string)item.ItemArray[4] == "MercadoPago")
+                {
+                    gastoMercadoPago += (decimal)item.ItemArray[1];
+
+                }
+                else
+                {
+                    if((string) item.ItemArray[4] == "Efectivo")
+                    {
+                       gastoEfectivo += (decimal)item.ItemArray[1];  
+                    }
+                    else
+                    {
+                        gastoOtro += (decimal)item.ItemArray[1];
+
+                    }
+                }
+            }
+                    this.frmCompras.mercadoPago = gastoMercadoPago;
+                    this.frmCompras.efectivo = gastoEfectivo;
+                    this.frmCompras.otro = gastoOtro;
         }
     }
 }
