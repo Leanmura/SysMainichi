@@ -318,10 +318,18 @@ namespace Mainichi
                 int index = e.RowIndex;
                 if (index >= 0)
                 {
+
                     gridCompra.Rows.RemoveAt(index);
+                    this.detalleCompra.Rows.RemoveAt(index);
+
                     calcularTotal(txtEfectivo, "Efectivo");
                     calcularTotal(txtMercadoPago, "MercadoPago");
                     calcularTotal(txtOtro, "Otro");
+
+                    this.mercadoPago = decimal.Parse(this.txtMercadoPago.Text);
+                    this.efectivo = decimal.Parse(this.txtEfectivo.Text);
+                    this.otro = decimal.Parse(this.txtOtro.Text);
+
                     this.hasChange = true;
                 }
             }

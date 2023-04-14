@@ -661,6 +661,10 @@ namespace Mainichi
 
             if (this.isNew)
             {
+                foreach(DataRow item in frmCompras.detalleCompra.Rows)
+                {
+                    Console.WriteLine(item.ItemArray[0]);
+                }
                 if (new N_Venta().Registrar(oVenta, detalleVenta, frmCompras.detalleCompra, out string mensaje))
                     MessageBox.Show("Venta del " + this.fecha.ToString("dd MMMM") + " guardada.", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else
@@ -672,6 +676,10 @@ namespace Mainichi
             }
             else
             {
+                foreach (DataRow item in frmCompras.detalleCompra.Rows)
+                {
+                    Console.WriteLine(item.ItemArray[0]);
+                }
                 if (new N_Venta().Editar(oVenta, detalleVenta, frmCompras.detalleCompra, out string mensaje))
                     MessageBox.Show("Venta del " + this.fecha.ToString("dd MMMM") + " editada.", "Editado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else
