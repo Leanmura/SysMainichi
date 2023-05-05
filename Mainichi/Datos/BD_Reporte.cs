@@ -57,5 +57,40 @@ namespace Datos
 
             return respuesta;
         }
+
+        public decimal totalEntradaPorCategoriaFormaDePago(string categoria, string formaDePago, DateTime fecha)
+        {
+            decimal respuesta = 0;
+            try
+            {
+                using (SqlConnection oConexion = new SqlConnection(Conexion.cadena))
+                {
+                    SqlCommand cmd = new SqlCommand("SP_TotalEntradaPorCategoriaFormaDePago", oConexion);
+                    cmd.Parameters.AddWithValue("Categoria", categoria);
+                    cmd.Parameters.AddWithValue("FormaDePago", formaDePago);
+                    cmd.Parameters.AddWithValue("Fecha", fecha);
+
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    oConexion.Open();
+                    //cmd.ExecuteNonQuery();
+                    using (SqlDataReader dataReader = cmd.ExecuteReader())
+                    {
+                        while (dataReader.Read())
+                        {
+                            if (dataReader["TOTAL"] != DBNull.Value)
+                                respuesta = Convert.ToDecimal(dataReader["TOTAL"]);
+                        }
+                    }
+
+
+                }
+            }
+            catch (Exception ex)
+            {
+                respuesta = -1;
+            }
+
+            return respuesta;
+        }
     }
 }

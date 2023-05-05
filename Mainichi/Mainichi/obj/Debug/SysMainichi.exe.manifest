@@ -67,14 +67,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Datos.dll" size="17920">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Datos.dll" size="18432">
       <assemblyIdentity name="Datos" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>4yl7vL8YhvaD2ewUkc2dSA5aK2utnFe9VBTtBtoeMzY=</dsig:DigestValue>
+        <dsig:DigestValue>E4u/uV2VShX7lOBjOcqLZaLMBaa1tOFG0MEkUYOAQlE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -151,26 +151,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Negocio.dll" size="7680">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Negocio.dll" size="8192">
       <assemblyIdentity name="Negocio" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>kJ+z2iw30bYKIFCejBlrjhjhek/l5IV+c5/lvud6quU=</dsig:DigestValue>
+        <dsig:DigestValue>/ESgRl7rJHdE9ytiowN+FI30EXwnN9IjYm9s/1xDBPI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SysMainichi.exe" size="373232">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SysMainichi.exe" size="382960">
       <assemblyIdentity name="SysMainichi" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>HQmmCVN88Pk+/nqDKmFM59n+HMyIV3Tpd++a400fl90=</dsig:DigestValue>
+        <dsig:DigestValue>sedvQelodlbvOXXvVXOjEgRCqQkbc06TZbzT4zAriIc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

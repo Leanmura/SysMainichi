@@ -30,6 +30,16 @@ namespace Mainichi
 
         private void txtRespuesta_KeyPress(object sender, KeyPressEventArgs e)
         {
+                Console.WriteLine(e.KeyChar);
+
+            if (e.KeyChar == (char)Keys.Return)
+            {
+                this.btnIngresar_Click(sender, e);
+            }
+        
+            else
+            {
+
             if (Char.IsDigit(e.KeyChar))
             {
                 e.Handled = false;
@@ -60,6 +70,7 @@ namespace Mainichi
                     }
                 }
             }
+            }
     }
 
         private void mdIngresarDato_Load(object sender, EventArgs e)
@@ -70,5 +81,7 @@ namespace Mainichi
             txtRespuesta.Location = new Point((this.Size.Width - 10 - txtRespuesta.Size.Width) / 2, 49);
             btnIngresar.Location = new Point((this.Size.Width - 10 - btnIngresar.Size.Width) / 2, 14);
         }
+
+
     }
 }

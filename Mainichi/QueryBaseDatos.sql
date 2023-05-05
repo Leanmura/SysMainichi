@@ -346,6 +346,22 @@ begin
 	CONVERT(char(10), v.Fecha, 105) = CONVERT(char(10), @Fecha, 105)
 end
 
+create PROCEDURE SP_TotalEntradaPorCategoriaFormaDePago(
+	@Categoria varchar(50) ,
+	@FormaDePago varchar(50),
+	@Fecha dateTime
+)AS
+begin
+	SELECT SUM(dv.Total)[TOTAL] FROM VENTA v
+	inner join DETALLE_VENTA dv on dv.IdVenta = v.IdVenta
+	inner join PRODUCTO p on p.IdProducto = dv.IdProducto
+	inner join CATEGORIA c on c.IdCategoria = p.IdCategoria
+	WHERE  c.Descripcion = @Categoria and 
+	CONVERT(char(10), v.Fecha, 105) = CONVERT(char(10), @Fecha, 105) and
+	dv.FormaDePago = @FormaDePago
+end
+
+
 go
 INSERT INTO CATEGORIA(Descripcion) VALUES('BEBIDA')
 

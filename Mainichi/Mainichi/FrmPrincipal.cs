@@ -244,6 +244,7 @@ namespace Mainichi
                 }
             }
                 this.frmCompras.detalleCompra = detalleCompra;
+            completarFrmCompras();
         }
 
         private void FrmPrincipal_FormClosing(object sender, FormClosingEventArgs e)

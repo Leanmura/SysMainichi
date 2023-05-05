@@ -15,6 +15,11 @@ namespace CapaNegocio
         {
             return oReporte.totalPorCategoria(categoria, fecha);
         }
+        public decimal totalEntradaPorCategoriaFormaDePago(string categoria, string formaDePago, DateTime fecha)
+        {
+            return oReporte.totalEntradaPorCategoriaFormaDePago(categoria, formaDePago, fecha);
+        }
+        
 
     }
 }

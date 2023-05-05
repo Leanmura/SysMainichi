@@ -32,8 +32,14 @@ namespace Mainichi
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnDescargar = new FontAwesome.Sharp.IconButton();
-            this.gridReporte = new System.Windows.Forms.DataGridView();
+            this.gridReporteGeneral = new System.Windows.Forms.DataGridView();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Comida = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Kiosco = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,13 +57,52 @@ namespace Mainichi
             this.TotalReal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateTimeDesde = new System.Windows.Forms.DateTimePicker();
             this.dateTimeHasta = new System.Windows.Forms.DateTimePicker();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblReporteGeneral = new System.Windows.Forms.Label();
             this.btnBuscar = new FontAwesome.Sharp.IconButton();
             this.lblHasta = new System.Windows.Forms.Label();
             this.lblDesde = new System.Windows.Forms.Label();
-            this.lblReporteGeneral = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.gridReporte)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.tabControl = new System.Windows.Forms.TabControl();
+            this.tabReporte1 = new System.Windows.Forms.TabPage();
+            this.tabComidas = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.gridReporteEfectivo = new System.Windows.Forms.DataGridView();
+            this.tabKiosco = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.gridReporteMercadoPago = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gcomida = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bebidaEf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GbebidaEf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.canchasEf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GcanchaEf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GastosFijosEf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gVariosEf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gastosEf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cambioEf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cambioNuevoEf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalEf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BrutoEf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.efectivoEf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comidaMp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GcomidaMp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BebidaMp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GbebidaMp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CanchasMp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GcanchasMp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GastosFijosMp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GvariosMp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GtotalMp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TotalMp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BrutoMp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.gridReporteGeneral)).BeginInit();
+            this.tabControl.SuspendLayout();
+            this.tabReporte1.SuspendLayout();
+            this.tabComidas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridReporteEfectivo)).BeginInit();
+            this.tabKiosco.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridReporteMercadoPago)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDescargar
@@ -74,7 +119,7 @@ namespace Mainichi
             this.btnDescargar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDescargar.IconSize = 18;
             this.btnDescargar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDescargar.Location = new System.Drawing.Point(1147, 667);
+            this.btnDescargar.Location = new System.Drawing.Point(1163, 600);
             this.btnDescargar.Name = "btnDescargar";
             this.btnDescargar.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnDescargar.Size = new System.Drawing.Size(105, 28);
@@ -84,13 +129,14 @@ namespace Mainichi
             this.btnDescargar.UseVisualStyleBackColor = false;
             this.btnDescargar.Click += new System.EventHandler(this.btnDescargar_Click);
             // 
-            // gridReporte
+            // gridReporteGeneral
             // 
-            this.gridReporte.AllowUserToAddRows = false;
-            this.gridReporte.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.gridReporteGeneral.AllowUserToAddRows = false;
+            this.gridReporteGeneral.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gridReporte.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.gridReporteGeneral.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.gridReporteGeneral.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -99,9 +145,9 @@ namespace Mainichi
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridReporte.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.gridReporte.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridReporte.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.gridReporteGeneral.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.gridReporteGeneral.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridReporteGeneral.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Fecha,
             this.Comida,
             this.Kiosco,
@@ -117,10 +163,10 @@ namespace Mainichi
             this.MercadoPago,
             this.Otro,
             this.TotalReal});
-            this.gridReporte.Location = new System.Drawing.Point(12, 92);
-            this.gridReporte.MultiSelect = false;
-            this.gridReporte.Name = "gridReporte";
-            this.gridReporte.ReadOnly = true;
+            this.gridReporteGeneral.Location = new System.Drawing.Point(-1, 39);
+            this.gridReporteGeneral.MultiSelect = false;
+            this.gridReporteGeneral.Name = "gridReporteGeneral";
+            this.gridReporteGeneral.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -128,14 +174,14 @@ namespace Mainichi
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridReporte.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gridReporte.RowHeadersVisible = false;
+            this.gridReporteGeneral.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.gridReporteGeneral.RowHeadersVisible = false;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            this.gridReporte.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.gridReporte.RowTemplate.Height = 25;
-            this.gridReporte.Size = new System.Drawing.Size(1240, 569);
-            this.gridReporte.TabIndex = 42;
+            this.gridReporteGeneral.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.gridReporteGeneral.RowTemplate.Height = 25;
+            this.gridReporteGeneral.Size = new System.Drawing.Size(1261, 510);
+            this.gridReporteGeneral.TabIndex = 42;
             // 
             // Fecha
             // 
@@ -247,7 +293,7 @@ namespace Mainichi
             this.dateTimeDesde.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dateTimeDesde.CustomFormat = "dd/MM/yyyy";
             this.dateTimeDesde.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimeDesde.Location = new System.Drawing.Point(892, 30);
+            this.dateTimeDesde.Location = new System.Drawing.Point(800, 601);
             this.dateTimeDesde.Name = "dateTimeDesde";
             this.dateTimeDesde.Size = new System.Drawing.Size(97, 20);
             this.dateTimeDesde.TabIndex = 50;
@@ -257,27 +303,21 @@ namespace Mainichi
             this.dateTimeHasta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dateTimeHasta.CustomFormat = "dd/MM/yyyy";
             this.dateTimeHasta.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimeHasta.Location = new System.Drawing.Point(1059, 30);
+            this.dateTimeHasta.Location = new System.Drawing.Point(967, 601);
             this.dateTimeHasta.Name = "dateTimeHasta";
             this.dateTimeHasta.Size = new System.Drawing.Size(97, 20);
             this.dateTimeHasta.TabIndex = 51;
             // 
-            // panel1
+            // lblReporteGeneral
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.SystemColors.Window;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.btnBuscar);
-            this.panel1.Controls.Add(this.lblHasta);
-            this.panel1.Controls.Add(this.lblDesde);
-            this.panel1.Controls.Add(this.lblReporteGeneral);
-            this.panel1.Controls.Add(this.dateTimeHasta);
-            this.panel1.Controls.Add(this.dateTimeDesde);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1240, 74);
-            this.panel1.TabIndex = 52;
+            this.lblReporteGeneral.AutoSize = true;
+            this.lblReporteGeneral.BackColor = System.Drawing.Color.White;
+            this.lblReporteGeneral.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReporteGeneral.Location = new System.Drawing.Point(6, 11);
+            this.lblReporteGeneral.Name = "lblReporteGeneral";
+            this.lblReporteGeneral.Size = new System.Drawing.Size(179, 25);
+            this.lblReporteGeneral.TabIndex = 52;
+            this.lblReporteGeneral.Text = "Reporte General";
             // 
             // btnBuscar
             // 
@@ -292,7 +332,7 @@ namespace Mainichi
             this.btnBuscar.IconColor = System.Drawing.Color.Black;
             this.btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnBuscar.IconSize = 16;
-            this.btnBuscar.Location = new System.Drawing.Point(1169, 30);
+            this.btnBuscar.Location = new System.Drawing.Point(1082, 601);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnBuscar.Size = new System.Drawing.Size(45, 20);
@@ -306,7 +346,7 @@ namespace Mainichi
             this.lblHasta.AutoSize = true;
             this.lblHasta.BackColor = System.Drawing.Color.White;
             this.lblHasta.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHasta.Location = new System.Drawing.Point(1004, 31);
+            this.lblHasta.Location = new System.Drawing.Point(912, 602);
             this.lblHasta.Name = "lblHasta";
             this.lblHasta.Size = new System.Drawing.Size(49, 17);
             this.lblHasta.TabIndex = 54;
@@ -317,49 +357,423 @@ namespace Mainichi
             this.lblDesde.AutoSize = true;
             this.lblDesde.BackColor = System.Drawing.Color.White;
             this.lblDesde.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDesde.Location = new System.Drawing.Point(834, 30);
+            this.lblDesde.Location = new System.Drawing.Point(742, 601);
             this.lblDesde.Name = "lblDesde";
             this.lblDesde.Size = new System.Drawing.Size(52, 17);
             this.lblDesde.TabIndex = 53;
             this.lblDesde.Text = "Desde:";
             // 
-            // lblReporteGeneral
+            // tabControl
             // 
-            this.lblReporteGeneral.AutoSize = true;
-            this.lblReporteGeneral.BackColor = System.Drawing.Color.White;
-            this.lblReporteGeneral.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReporteGeneral.Location = new System.Drawing.Point(23, 25);
-            this.lblReporteGeneral.Name = "lblReporteGeneral";
-            this.lblReporteGeneral.Size = new System.Drawing.Size(179, 25);
-            this.lblReporteGeneral.TabIndex = 52;
-            this.lblReporteGeneral.Text = "Reporte General";
+            this.tabControl.Controls.Add(this.tabReporte1);
+            this.tabControl.Controls.Add(this.tabComidas);
+            this.tabControl.Controls.Add(this.tabKiosco);
+            this.tabControl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tabControl.ItemSize = new System.Drawing.Size(70, 25);
+            this.tabControl.Location = new System.Drawing.Point(9, 9);
+            this.tabControl.Margin = new System.Windows.Forms.Padding(0);
+            this.tabControl.Name = "tabControl";
+            this.tabControl.Padding = new System.Drawing.Point(0, 0);
+            this.tabControl.SelectedIndex = 0;
+            this.tabControl.Size = new System.Drawing.Size(1266, 579);
+            this.tabControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.tabControl.TabIndex = 53;
+            // 
+            // tabReporte1
+            // 
+            this.tabReporte1.Controls.Add(this.lblReporteGeneral);
+            this.tabReporte1.Controls.Add(this.gridReporteGeneral);
+            this.tabReporte1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.tabReporte1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabReporte1.Location = new System.Drawing.Point(4, 29);
+            this.tabReporte1.Margin = new System.Windows.Forms.Padding(5);
+            this.tabReporte1.Name = "tabReporte1";
+            this.tabReporte1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabReporte1.Size = new System.Drawing.Size(1258, 546);
+            this.tabReporte1.TabIndex = 0;
+            this.tabReporte1.Text = "General";
+            this.tabReporte1.UseVisualStyleBackColor = true;
+            // 
+            // tabComidas
+            // 
+            this.tabComidas.Controls.Add(this.label1);
+            this.tabComidas.Controls.Add(this.gridReporteEfectivo);
+            this.tabComidas.Cursor = System.Windows.Forms.Cursors.Default;
+            this.tabComidas.Location = new System.Drawing.Point(4, 29);
+            this.tabComidas.Name = "tabComidas";
+            this.tabComidas.Padding = new System.Windows.Forms.Padding(3);
+            this.tabComidas.Size = new System.Drawing.Size(1258, 546);
+            this.tabComidas.TabIndex = 1;
+            this.tabComidas.Text = "Efectivo";
+            this.tabComidas.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(175, 25);
+            this.label1.TabIndex = 54;
+            this.label1.Text = "Reporte Efectivo";
+            // 
+            // gridReporteEfectivo
+            // 
+            this.gridReporteEfectivo.AllowUserToAddRows = false;
+            this.gridReporteEfectivo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridReporteEfectivo.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.gridReporteEfectivo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridReporteEfectivo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.gridReporteEfectivo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridReporteEfectivo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.Gcomida,
+            this.bebidaEf,
+            this.GbebidaEf,
+            this.canchasEf,
+            this.GcanchaEf,
+            this.GastosFijosEf,
+            this.gVariosEf,
+            this.gastosEf,
+            this.cambioEf,
+            this.cambioNuevoEf,
+            this.totalEf,
+            this.BrutoEf,
+            this.efectivoEf});
+            this.gridReporteEfectivo.Location = new System.Drawing.Point(-1, 39);
+            this.gridReporteEfectivo.MultiSelect = false;
+            this.gridReporteEfectivo.Name = "gridReporteEfectivo";
+            this.gridReporteEfectivo.ReadOnly = true;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridReporteEfectivo.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.gridReporteEfectivo.RowHeadersVisible = false;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            this.gridReporteEfectivo.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.gridReporteEfectivo.RowTemplate.Height = 25;
+            this.gridReporteEfectivo.Size = new System.Drawing.Size(1260, 508);
+            this.gridReporteEfectivo.TabIndex = 53;
+            // 
+            // tabKiosco
+            // 
+            this.tabKiosco.Controls.Add(this.label2);
+            this.tabKiosco.Controls.Add(this.gridReporteMercadoPago);
+            this.tabKiosco.Cursor = System.Windows.Forms.Cursors.Default;
+            this.tabKiosco.Location = new System.Drawing.Point(4, 29);
+            this.tabKiosco.Name = "tabKiosco";
+            this.tabKiosco.Padding = new System.Windows.Forms.Padding(3);
+            this.tabKiosco.Size = new System.Drawing.Size(1258, 546);
+            this.tabKiosco.TabIndex = 2;
+            this.tabKiosco.Text = "MP";
+            this.tabKiosco.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 11);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(248, 25);
+            this.label2.TabIndex = 56;
+            this.label2.Text = "Reporte Mercado Pago";
+            // 
+            // gridReporteMercadoPago
+            // 
+            this.gridReporteMercadoPago.AllowUserToAddRows = false;
+            this.gridReporteMercadoPago.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridReporteMercadoPago.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.gridReporteMercadoPago.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridReporteMercadoPago.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.gridReporteMercadoPago.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridReporteMercadoPago.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn12,
+            this.comidaMp,
+            this.GcomidaMp,
+            this.BebidaMp,
+            this.GbebidaMp,
+            this.CanchasMp,
+            this.GcanchasMp,
+            this.GastosFijosMp,
+            this.GvariosMp,
+            this.GtotalMp,
+            this.TotalMp,
+            this.BrutoMp});
+            this.gridReporteMercadoPago.Location = new System.Drawing.Point(-1, 39);
+            this.gridReporteMercadoPago.MultiSelect = false;
+            this.gridReporteMercadoPago.Name = "gridReporteMercadoPago";
+            this.gridReporteMercadoPago.ReadOnly = true;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridReporteMercadoPago.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.gridReporteMercadoPago.RowHeadersVisible = false;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            this.gridReporteMercadoPago.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            this.gridReporteMercadoPago.RowTemplate.Height = 25;
+            this.gridReporteMercadoPago.Size = new System.Drawing.Size(1258, 506);
+            this.gridReporteMercadoPago.TabIndex = 55;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Fecha";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 147;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Comida";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 75;
+            // 
+            // Gcomida
+            // 
+            this.Gcomida.HeaderText = "Gastos Comida";
+            this.Gcomida.Name = "Gcomida";
+            this.Gcomida.ReadOnly = true;
+            this.Gcomida.Width = 75;
+            // 
+            // bebidaEf
+            // 
+            this.bebidaEf.HeaderText = "Bebida";
+            this.bebidaEf.Name = "bebidaEf";
+            this.bebidaEf.ReadOnly = true;
+            this.bebidaEf.Width = 75;
+            // 
+            // GbebidaEf
+            // 
+            this.GbebidaEf.HeaderText = "Gastos Bebida";
+            this.GbebidaEf.Name = "GbebidaEf";
+            this.GbebidaEf.ReadOnly = true;
+            this.GbebidaEf.Width = 75;
+            // 
+            // canchasEf
+            // 
+            this.canchasEf.HeaderText = "Canchas";
+            this.canchasEf.Name = "canchasEf";
+            this.canchasEf.ReadOnly = true;
+            this.canchasEf.Width = 75;
+            // 
+            // GcanchaEf
+            // 
+            this.GcanchaEf.HeaderText = "Gastos Canchas";
+            this.GcanchaEf.Name = "GcanchaEf";
+            this.GcanchaEf.ReadOnly = true;
+            this.GcanchaEf.Width = 75;
+            // 
+            // GastosFijosEf
+            // 
+            this.GastosFijosEf.HeaderText = "Gastos Fijos";
+            this.GastosFijosEf.Name = "GastosFijosEf";
+            this.GastosFijosEf.ReadOnly = true;
+            this.GastosFijosEf.Width = 75;
+            // 
+            // gVariosEf
+            // 
+            this.gVariosEf.HeaderText = "Gastos Varios";
+            this.gVariosEf.Name = "gVariosEf";
+            this.gVariosEf.ReadOnly = true;
+            this.gVariosEf.Width = 75;
+            // 
+            // gastosEf
+            // 
+            this.gastosEf.HeaderText = "Total Gastos";
+            this.gastosEf.Name = "gastosEf";
+            this.gastosEf.ReadOnly = true;
+            this.gastosEf.Width = 75;
+            // 
+            // cambioEf
+            // 
+            this.cambioEf.HeaderText = "Cambio";
+            this.cambioEf.Name = "cambioEf";
+            this.cambioEf.ReadOnly = true;
+            this.cambioEf.Width = 75;
+            // 
+            // cambioNuevoEf
+            // 
+            this.cambioNuevoEf.HeaderText = "Cambio Nuevo";
+            this.cambioNuevoEf.Name = "cambioNuevoEf";
+            this.cambioNuevoEf.ReadOnly = true;
+            this.cambioNuevoEf.Width = 75;
+            // 
+            // totalEf
+            // 
+            this.totalEf.HeaderText = "Total Entrada";
+            this.totalEf.Name = "totalEf";
+            this.totalEf.ReadOnly = true;
+            this.totalEf.Width = 75;
+            // 
+            // BrutoEf
+            // 
+            this.BrutoEf.HeaderText = "Bruto";
+            this.BrutoEf.Name = "BrutoEf";
+            this.BrutoEf.ReadOnly = true;
+            this.BrutoEf.Width = 75;
+            // 
+            // efectivoEf
+            // 
+            this.efectivoEf.HeaderText = "Efectivo";
+            this.efectivoEf.Name = "efectivoEf";
+            this.efectivoEf.ReadOnly = true;
+            this.efectivoEf.Width = 75;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.HeaderText = "Fecha";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            this.dataGridViewTextBoxColumn12.Width = 147;
+            // 
+            // comidaMp
+            // 
+            this.comidaMp.HeaderText = "Comida";
+            this.comidaMp.Name = "comidaMp";
+            this.comidaMp.ReadOnly = true;
+            this.comidaMp.Width = 75;
+            // 
+            // GcomidaMp
+            // 
+            this.GcomidaMp.HeaderText = "Gastos Comida";
+            this.GcomidaMp.Name = "GcomidaMp";
+            this.GcomidaMp.ReadOnly = true;
+            this.GcomidaMp.Width = 75;
+            // 
+            // BebidaMp
+            // 
+            this.BebidaMp.HeaderText = "Bebida";
+            this.BebidaMp.Name = "BebidaMp";
+            this.BebidaMp.ReadOnly = true;
+            this.BebidaMp.Width = 75;
+            // 
+            // GbebidaMp
+            // 
+            this.GbebidaMp.HeaderText = "Gastos Bebida";
+            this.GbebidaMp.Name = "GbebidaMp";
+            this.GbebidaMp.ReadOnly = true;
+            this.GbebidaMp.Width = 75;
+            // 
+            // CanchasMp
+            // 
+            this.CanchasMp.HeaderText = "Canchas";
+            this.CanchasMp.Name = "CanchasMp";
+            this.CanchasMp.ReadOnly = true;
+            this.CanchasMp.Width = 75;
+            // 
+            // GcanchasMp
+            // 
+            this.GcanchasMp.HeaderText = "Gastos Canchas";
+            this.GcanchasMp.Name = "GcanchasMp";
+            this.GcanchasMp.ReadOnly = true;
+            this.GcanchasMp.Width = 75;
+            // 
+            // GastosFijosMp
+            // 
+            this.GastosFijosMp.HeaderText = "Gastos Fijos";
+            this.GastosFijosMp.Name = "GastosFijosMp";
+            this.GastosFijosMp.ReadOnly = true;
+            this.GastosFijosMp.Width = 75;
+            // 
+            // GvariosMp
+            // 
+            this.GvariosMp.HeaderText = "Gastos Varios";
+            this.GvariosMp.Name = "GvariosMp";
+            this.GvariosMp.ReadOnly = true;
+            this.GvariosMp.Width = 75;
+            // 
+            // GtotalMp
+            // 
+            this.GtotalMp.HeaderText = "Total Gastos";
+            this.GtotalMp.Name = "GtotalMp";
+            this.GtotalMp.ReadOnly = true;
+            this.GtotalMp.Width = 75;
+            // 
+            // TotalMp
+            // 
+            this.TotalMp.HeaderText = "Total Entrada";
+            this.TotalMp.Name = "TotalMp";
+            this.TotalMp.ReadOnly = true;
+            this.TotalMp.Width = 75;
+            // 
+            // BrutoMp
+            // 
+            this.BrutoMp.HeaderText = "Bruto";
+            this.BrutoMp.Name = "BrutoMp";
+            this.BrutoMp.ReadOnly = true;
+            this.BrutoMp.Width = 75;
             // 
             // FrmReportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 711);
+            this.ClientSize = new System.Drawing.Size(1284, 640);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.tabControl);
             this.Controls.Add(this.btnDescargar);
-            this.Controls.Add(this.gridReporte);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.dateTimeDesde);
+            this.Controls.Add(this.lblHasta);
+            this.Controls.Add(this.lblDesde);
+            this.Controls.Add(this.dateTimeHasta);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmReportes";
             this.Text = "FrmReportes";
             this.Load += new System.EventHandler(this.FrmReportes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.gridReporte)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridReporteGeneral)).EndInit();
+            this.tabControl.ResumeLayout(false);
+            this.tabReporte1.ResumeLayout(false);
+            this.tabReporte1.PerformLayout();
+            this.tabComidas.ResumeLayout(false);
+            this.tabComidas.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridReporteEfectivo)).EndInit();
+            this.tabKiosco.ResumeLayout(false);
+            this.tabKiosco.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridReporteMercadoPago)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private FontAwesome.Sharp.IconButton btnDescargar;
-        private System.Windows.Forms.DataGridView gridReporte;
+        private System.Windows.Forms.DataGridView gridReporteGeneral;
         private System.Windows.Forms.DateTimePicker dateTimeDesde;
         private System.Windows.Forms.DateTimePicker dateTimeHasta;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblReporteGeneral;
         private System.Windows.Forms.Label lblHasta;
         private System.Windows.Forms.Label lblDesde;
@@ -379,5 +793,40 @@ namespace Mainichi
         private System.Windows.Forms.DataGridViewTextBoxColumn MercadoPago;
         private System.Windows.Forms.DataGridViewTextBoxColumn Otro;
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalReal;
+        private System.Windows.Forms.TabControl tabControl;
+        private System.Windows.Forms.TabPage tabReporte1;
+        private System.Windows.Forms.TabPage tabComidas;
+        private System.Windows.Forms.TabPage tabKiosco;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView gridReporteEfectivo;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView gridReporteMercadoPago;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Gcomida;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bebidaEf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GbebidaEf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn canchasEf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GcanchaEf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GastosFijosEf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gVariosEf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gastosEf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cambioEf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cambioNuevoEf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn totalEf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BrutoEf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn efectivoEf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn comidaMp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GcomidaMp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BebidaMp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GbebidaMp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CanchasMp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GcanchasMp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GastosFijosMp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GvariosMp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GtotalMp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TotalMp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BrutoMp;
     }
 }

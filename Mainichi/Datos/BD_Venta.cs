@@ -238,6 +238,7 @@ namespace Datos
                             };
                             dc.PrecioCompra = Convert.ToDecimal(dr["PrecioCompra"].ToString());
                             dc.Cantidad = Convert.ToInt32(dr["Cantidad"].ToString());
+                            dc.Total = Convert.ToDecimal(dr["Total"].ToString());
                             dc.FormaDePago = dr["FormaDePago"].ToString();
 
                             lista.Add(dc);
